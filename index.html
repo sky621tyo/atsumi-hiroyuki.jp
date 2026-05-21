@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 修正: 事務所名の変更をタイトルにも反映 -->
     <title>行政書士渥美洋行政策法務研究所</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
@@ -51,17 +52,17 @@
       "@type": "FAQPage",
       "mainEntity": [{
         "@type": "Question",
-        "name": "補助金の申請書は、なぜ通らないのですか？",
+        "name": "補助金の事業計画書は、なぜ通らないのですか？",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "多くの申請書は、書き手の熱意だけで書かれています。しかし審査側が見ているのは「根拠」と、その根拠をつなぐ「筋道」です。「何を」「いくらで」「なぜその方法で」——一つでも「なぜ」が宙に浮いた瞬間、審査員の手は止まります。また、専門家に「丸投げ」して作られた書類は、たとえ採択されても実際の事業運営や交付申請の段階で必ず破綻します。経営者自身が腹落ちし、自らの言葉で語れる計画を構築することが重要です。"
+          "text": "多くの事業計画書は、書き手の熱意で書かれています。しかし審査官が見ているのは、根拠と、その根拠をつなぐ「筋道」です。「何を」「いくらで」「なぜその方法で」——一つでも「なぜ」が宙に浮いた瞬間、審査官の手は止まります。数字が間違っているから落ちるのではなく、書いてある数字と言葉のあいだに「なぜ？」が残るから落ちるのです。"
         }
       }, {
         "@type": "Question",
         "name": "公益法人の認定審査で、内閣府が最も重視する判断基準は何ですか？",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "「公益目的事業の該当性」に加え、それを安定的かつ適正に遂行できる「財務基準（収支相償など）・ガバナンス体制」が実態として構築されているかを厳格に審査します。私自身、審査監督調査官としてガバナンス不全による「認定の取り消し」の現場も見てきました。法制面だけでなく、認定後の定期報告等を見据え、決算書等の「数字が読め、経営的視点から書類を構成できる」専門家が支援することが、確実な認定処分と持続可能な運営への道です。"
+          "text": "「公益目的事業の該当性」に加え、それを安定的かつ適正に遂行できる「財務基準（収支相償など）・ガバナンス体制」が実態として構築されているかを厳格に審査します。法制面だけでなく、認定後の定期報告等を見据え、決算書等の「数字が読め、経営的視点から書類を構成できる」専門家が支援することが、確実な認定処分への道です。"
         }
       }, {
         "@type": "Question",
@@ -73,6 +74,39 @@
       }]
     }
     </script>
+
+    <!-- 修正: LegalServiceスキーマの追加 -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LegalService",
+      "name": "行政書士渥美洋行政策法務研究所",
+      <!-- 修正(最終仕上げ): 用語の統一:「審査官」に統一 -->
+      "description": "補助金申請、公益法人認定、国際法務を専門とする行政書士事務所。内閣府公益認定等委員会事務局での審査監督調査官経験を背景に、審査官の論理に則った書類構築を行う。",
+      "founder": {
+        "@type": "Person",
+        "name": "渥美 洋行",
+        "alternateName": "Hiroyuki Atsumi"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "富士見1-5-4 3階",
+        "addressLocality": "千代田区",
+        "addressRegion": "東京都",
+        "postalCode": "102-0071",
+        "addressCountry": "JP"
+      },
+      "areaServed": "Japan",
+      "sameAs": [
+        "https://x.com/HAtsumi621",
+        <!-- 修正(最終仕上げ): sameAs プロパティに AA WAVE合同会社のURLを追加 -->
+        "https://www.aawave.co.jp/"
+        /* 修正: note新アカウント開設後に、新規note URLを追加する */
+      ]
+      <!-- 修正(最終仕上げ): telephone プロパティのプレースホルダーを追加 -->
+      /* "telephone": "+81-XX-XXXX-XXXX",  // 登録完了後に事務所電話番号を追加 */
+    }
+    </script>
 </head>
 <body class="selection:bg-slate-200 text-slate-800">
 
@@ -82,41 +116,45 @@
             <h1 class="text-sm font-medium tracking-widest text-slate-900">
                 行政書士渥美洋行政策法務研究所
             </h1>
-            <nav class="hidden md:flex space-x-6 items-center">
+            <nav class="hidden md:flex space-x-8 items-center">
                 <a href="#statement" class="text-xs font-medium text-slate-500 hover:text-slate-900 transition-colors">考え方</a>
                 <a href="#services" class="text-xs font-medium text-slate-500 hover:text-slate-900 transition-colors">業務内容</a>
+                <a href="#fees" class="text-xs font-medium text-slate-500 hover:text-slate-900 transition-colors">料金の考え方</a>
                 <a href="#faq" class="text-xs font-medium text-slate-500 hover:text-slate-900 transition-colors">よくあるご質問</a>
-                <a href="#contact" class="text-xs font-medium text-slate-900 border-b border-slate-900 pb-1 hover:text-slate-500 hover:border-slate-500 transition-all mr-2">
+                <a href="#contact" class="text-xs font-medium text-slate-900 border-b border-slate-900 pb-1 hover:text-slate-500 hover:border-slate-500 transition-all">
                     ご相談・お問い合わせ
                 </a>
-                <div class="flex items-center space-x-3 pl-5 border-l border-slate-200 text-[11px] text-slate-400">
-                    <span class="text-slate-900 font-medium">日本語</span>
-                    <span class="font-en text-slate-300">/</span>
-                    <a href="#" class="hover:text-slate-900 transition-colors font-en">English</a>
-                    <span class="font-en text-slate-300">/</span>
-                    <a href="#" class="hover:text-slate-900 transition-colors">简体中文</a>
-                    <span class="font-en text-slate-300">/</span>
-                    <a href="#" class="hover:text-slate-900 transition-colors">繁體中文</a>
-                </div>
             </nav>
+            <!-- 修正: 多言語版は開業後に順次公開予定のため一時非表示 -->
+            <!--
+            <div class="hidden md:flex items-center space-x-4">
+                <a href="#" class="text-xs font-medium text-slate-500 hover:text-slate-900 transition-colors">English</a>
+                <a href="#" class="text-xs font-medium text-slate-500 hover:text-slate-900 transition-colors">简体中文</a>
+                <a href="#" class="text-xs font-medium text-slate-500 hover:text-slate-900 transition-colors">繁體中文</a>
+            </div>
+            -->
         </div>
     </header>
 
     <!-- ヒーロー / 問いかけ -->
     <section class="pt-48 pb-24 px-6">
         <div class="max-w-3xl mx-auto">
+            <!-- 修正: ヒーローコピーの差し替え（「審査官」のニュアンスを反映） -->
             <h2 class="font-serif-jp text-3xl md:text-5xl leading-[1.8] md:leading-[1.6] text-slate-900 mb-12">
-                あなたの思いは、<br>
-                申請書のなかで伝わるように<br class="hidden md:block">
+                あなたの事業は、<br>
+                審査官の言語で<br class="hidden md:block">
                 書かれていますか。
             </h2>
             <div class="space-y-6 text-slate-600 leading-loose text-sm md:text-base">
+                <!-- 修正(最終仕上げ): ヒーローセクションの一文の修正(用語統一に伴う調整) -->
                 <p>
                     優れた技術や事業構想が、申請書の上で伝わりきらない。<br>
-                    その一行を、書き換えます。
+                    その一行を、審査官に「届く言葉」へと書き換えます。
                 </p>
+                <!-- 修正: 審査監督調査官のキーワードを導入文に配置 -->
                 <p>
-                    中央省庁での24年。行政の奥深くで、通る書類と通らない書類の差を見てきました。<br class="hidden md:block">
+                    中央省庁での24年。内閣府公益認定等委員会事務局では審査監督調査官として、<br class="hidden md:block">
+                    通る書類と通らない書類の差を見てきました。<br class="hidden md:block">
                     その経験から、あなたのビジネスを「公共の文脈」へと繋ぎ直します。
                 </p>
             </div>
@@ -130,8 +168,9 @@
                 <span class="text-xs font-medium tracking-widest text-slate-400">考え方</span>
             </div>
             
+            <!-- 修正(最終仕上げ): 用語の統一:「審査官」に統一 -->
             <h3 class="font-serif-jp text-2xl md:text-3xl text-slate-900 mb-12 leading-relaxed">
-                審査する側の言葉で、申請書類を構築する。
+                審査官の言葉で、申請書類を構築する。
             </h3>
             
             <div class="space-y-8 text-slate-600 leading-loose text-sm md:text-base font-serif-jp">
@@ -145,14 +184,20 @@
                     当研究所が行政書士として提供するのは、法的知見に基づき、その根拠と「筋道」を正確な文書へと落とし込む作業です。
                 </p>
                 <p>
-                    補助金、公益認定、そして国際的な許認可。いずれも審査を通過したら終わりではありません。その後の実績報告、定期報告、監査への対応——申請よりも長い道のりが続きます。当研究所が作成する書類は、のちの監査にも耐えうる、行政の論理に則った強固な土台となります。
+                    補助金、公益認定、そして海外企業の日本進出に伴う許認可。いずれも審査を通過したら終わりではありません。その後の実績報告、定期報告、監査への対応——申請よりも長い道のりが続きます。当研究所が作成する書類は、のちの監査にも耐えうる、行政の論理に則った強固な土台となります。
+                </p>
+
+                <!-- 修正: 「伴走」というバズワードを排除し、専門家としての覚悟を示す言葉へ -->
+                <p class="pt-8 mt-8 border-t border-slate-200 text-lg md:text-xl text-slate-900 font-medium leading-relaxed">
+                    私たちは、単なる書類の代書は行いません。<br>
+                    経営者ご自身が、自らの言葉で確信を持って語れる計画となるまで、徹底して書面を練り上げます。
                 </p>
             </div>
         </div>
     </section>
 
     <!-- 提供サービス（業務内容） -->
-    <section id="services" class="px-6 border-b border-slate-100">
+    <section id="services" class="px-6 py-32 border-b border-slate-100">
         <div class="max-w-4xl mx-auto">
             <div class="mb-16">
                 <span class="text-xs font-medium tracking-widest text-slate-400">業務内容</span>
@@ -166,9 +211,10 @@
                         <p class="text-xs font-medium text-slate-400 tracking-wider">法人・企業支援</p>
                     </div>
                     <div class="w-full md:w-2/3">
+                        <!-- 修正(最終仕上げ): 用語の正確性:「専権事項」→「独占業務」 -->
                         <p class="text-slate-600 leading-loose text-sm">
                             <strong>補助金・交付金等における申請書類の構築</strong><br>
-                            2026年1月の法改正により、その専門性が明確化された領域です。行政書士の専権事項として、難易度の高い申請書類の構築を担います。ただし、当研究所が書類を「丸投げ」で代筆することはありません。事業者が自らの言葉で計画を語り、採択後も確実に実行できる解像度まで落とし込むための伴走を行います。公募要領の行間にある意図を読み解き、自社の事業を審査員の胸に落ちる「公的なロジック」へと翻訳することで、資金調達の確度を最大化します。
+                            2026年1月の法改正により、その専門性が明確化された領域です。行政書士の独占業務として明確化されたこの領域において、難易度の高い申請書類の構築を担います。公募要領の行間にある意図を読み解き、自社の事業を審査官の胸に落ちる「公的なロジック」へと翻訳することで、採択の可能性を引き上げます。
                         </p>
                     </div>
                 </div>
@@ -182,7 +228,7 @@
                     <div class="w-full md:w-2/3">
                         <p class="text-slate-600 leading-loose text-sm">
                             <strong>公益法人の設立認定申請、変更認定申請、定期報告書類の作成</strong><br>
-                            一般社団・財団法人からの公益認定取得において最大の障壁となる、収支相償や公益目的事業比率などの厳格な「財務基準」。内閣府 公益認定等委員会事務局での審査監督調査官としての実務経験を活かし、行政が求める数字の根拠と法的な整合性を満たした申請書類を構築し、審査がこじれることのないスムーズな認定処分へと導きます。<br><br>
+                            一般社団・財団法人からの公益認定取得において最大の障壁となる、収支相償や公益目的事業比率などの厳格な「財務基準」。内閣府 公益認定等委員会事務局での審査監督調査官としての実務経験を活かし、行政が求める数字の根拠と法的な整合性を満たした申請書類を構築し、審査がこじれることのないスムーズな認定処分を目指します。<br><br>
                             また、「認定の取り消し」に至る現場を見てきたからこそ、認定取得後の定期報告等の書面作成やガバナンス体制の構築も含め、持続可能な法人運営を的確に支援いたします。
                         </p>
                     </div>
@@ -197,9 +243,43 @@
                     <div class="w-full md:w-2/3">
                         <p class="text-slate-600 leading-loose text-sm">
                             <strong>在留資格の申請取次、外国人雇用に関する書類作成、海外企業の日本進出に伴う許認可申請</strong><br>
-                            法人のグローバル化に伴う、複雑な出入国管理・許認可の手続きを支援します。企業が外国人人材を適法かつ安定的に雇用するための在留資格（就労ビザ等）の申請取次や、海外企業の日本市場参入（拠点設立・営業許認可）に必要となる行政文書の作成を、法的リスクを排除した確実な構成で担います。
+                            法人のグローバル化に伴う、複雑な出入国管理・許認可の手続きを支援します。企業が高度な外国人人材を適法かつ安定的に雇用するための在留資格（就労ビザ等）の申請取次や、海外企業との合弁・日本市場参入をサポートする「日本側パートナー企業・担当者様」向けに行政文書の作成を行い、法的リスクを排除した確実な事業展開を担います。
                         </p>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 料金の考え方 -->
+    <section id="fees" class="bg-slate-50 px-6 py-32 border-b border-slate-100">
+        <div class="max-w-4xl mx-auto">
+            <div class="mb-16">
+                <span class="text-xs font-medium tracking-widest text-slate-400">料金の考え方</span>
+            </div>
+            
+            <h3 class="font-serif-jp text-2xl md:text-3xl text-slate-900 mb-12 leading-relaxed">
+                当研究所の報酬額は、以下の四つの要素を基準に算出いたします。
+            </h3>
+            
+            <div class="text-slate-600 leading-loose text-sm md:text-base font-serif-jp">
+                <ul class="space-y-4 mb-12 ml-2">
+                    <li class="flex items-start"><span class="mr-3 font-bold">一、</span>書類作成の工数（申請書類の分量・複雑性）</li>
+                    <li class="flex items-start"><span class="mr-3 font-bold">二、</span>関係官庁の数および調整の難易度</li>
+                    <li class="flex items-start"><span class="mr-3 font-bold">三、</span>事業計画の規模および財務分析の深度</li>
+                    <li class="flex items-start"><span class="mr-3 font-bold">四、</span>求められる対応期間</li>
+                </ul>
+
+                <p class="mb-12">
+                    初回のご相談（30分・無料）で事業の輪郭をうかがった上で、お見積もりと業務範囲を書面でご提示いたします。<br>
+                    ご契約は、お見積もりにご納得いただいてからとなります。
+                </p>
+
+                <div class="p-6 bg-white border border-slate-200 rounded-sm">
+                    <p class="text-xs text-slate-500 leading-relaxed font-sans">
+                        ※行政書士法第10条の2第1項に基づく報酬額表は、当事務所内に掲示しております。<br>
+                        ※成功報酬制をご希望の場合は、別途ご相談ください。
+                    </p>
                 </div>
             </div>
         </div>
@@ -221,10 +301,11 @@
                             補助金の申請書は、なぜ通らないのですか？
                         </h4>
                     </div>
+                    <!-- 修正(最終仕上げ): 用語の統一:「審査官」に統一 -->
                     <div class="w-full md:w-1/2 text-slate-600 text-sm leading-loose">
                         <p>
-                            多くの申請書は、書き手の熱意だけで書かれています。しかし審査側が見ているのは「根拠」と、その根拠をつなぐ「筋道」です。「何を」「いくらで」「なぜその方法で」——一つでも「なぜ」が宙に浮いた瞬間、審査員の手は止まります。<br>
-                            また、専門家に「丸投げ」して作られた書類は、たとえ採択されても実際の事業運営や交付申請の段階で必ず破綻します。経営者自身が腹落ちし、自らの言葉で語れる計画を構築することが重要です。
+                            多くの申請書は、書き手の熱意だけで書かれています。しかし審査官が見ているのは「根拠」と、その根拠をつなぐ「筋道」です。「何を」「いくらで」「なぜその方法で」——一つでも「なぜ」が宙に浮いた瞬間、審査官の手は止まります。<br>
+                            また、専門家に「丸投げ」して作られた書類は、たとえ採択されても実際の事業運営や交付申請の段階で破綻するリスクがあります。経営者自身が腹落ちし、自らの言葉で語れる計画を構築することが重要です。
                         </p>
                     </div>
                 </div>
@@ -242,7 +323,7 @@
                     <div class="w-full md:w-1/2 text-slate-600 text-sm leading-loose">
                         <p>
                             「公益目的事業の該当性」に加え、それを安定的かつ適正に遂行できる「財務基準（収支相償など）・ガバナンス体制」が実態として構築されているかを厳格に審査します。<br>
-                            私自身、審査監督調査官としてガバナンス不全による「認定の取り消し」の現場も見てきました。法制面だけでなく、認定後の定期報告等を見据え、決算書等の「数字が読め、経営的視点から書類を構成できる」専門家が支援することが、確実な認定処分と持続可能な運営への道です。
+                            単なる法制面（書類の形式）の整備にとどまらず、認定後の定期報告等を見据え、決算書等の「数字」を的確に読み解き、経営的視点から事業全体を構成できる専門家の関与が不可欠です。当研究所では、法律と財務の両面から確実な認定処分と持続可能な運営を支援します。
                         </p>
                     </div>
                 </div>
@@ -259,7 +340,7 @@
                     </div>
                     <div class="w-full md:w-1/2 text-slate-600 text-sm leading-loose">
                         <p>
-                            出入国在留管理局や各省庁が求める「真実性」と「事業の継続性・安定性」を、客観的な書類の積み重ねによって立証しなければならない点です。単なる申請書の記入ではなく、事業計画や財務状況を的確に行政言語へと翻訳し、「法的に疑義のない状態」を作り上げる文書構成力が問われます。
+                            出入国在留管理局や各省庁が求める「真実性」と「事業の継続性・安定性」を、客観的な書類の積み重ねによって立証しなければならない点です。単なる申請書の記入ではなく、日本側の受け入れ態勢や事業計画・財務状況を的確に行政言語へと翻訳し、「法的に疑義のない状態」を作り上げる文書構成力が問われます。
                         </p>
                     </div>
                 </div>
@@ -269,25 +350,54 @@
 
     <!-- プロフィール -->
     <section class="px-6 bg-slate-50 py-32">
-        <div class="max-w-3xl mx-auto text-center md:text-left">
-            <h3 class="font-serif-jp text-3xl text-slate-900 mb-2">渥美 洋行</h3>
-            <p class="text-sm text-slate-500 mb-8 font-en tracking-wider">Hiroyuki Atsumi</p>
-            
-            <p class="text-slate-600 leading-loose text-sm mb-10">
-                行政書士<br>
-                東京都行政書士会所属
-            </p>
-            
-            <div class="text-slate-600 leading-loose text-sm space-y-6 text-left">
-                <p>
+        <div class="max-w-4xl mx-auto flex flex-col md:flex-row gap-12 md:gap-20 items-start">
+            <div class="w-full md:w-1/3">
+                <!-- 写真領域 -->
+                <div class="aspect-[3/4] bg-white border border-slate-200 flex items-center justify-center text-slate-400 text-sm text-center px-4">
+                    <!-- 修正(最終仕上げ): プロフィール写真領域の注記追加 -->
+                    <!-- ※開業前にエディトリアル系のポートレート写真を撮影して差し替え予定。
+                         推奨仕様:モノクロまたは寒色フィルター、目線をカメラから少し外す、
+                         背景は無地またはぼかし、服装はジャケット+ノーネクタイ程度のセミフォーマル。
+                         サイト全体のスレートグレー基調と統一すること。 -->
+                    [渥美洋行氏の写真]
+                </div>
+            </div>
+            <div class="w-full md:w-2/3 md:pt-8">
+                <h3 class="font-serif-jp text-3xl text-slate-900 mb-2">渥美 洋行</h3>
+                <p class="text-sm text-slate-500 mb-8 font-en tracking-wider">Hiroyuki Atsumi</p>
+                
+                <!-- 修正(最終仕上げ): プロフィールセクションの肩書表記の整理 -->
+                <p class="text-slate-600 leading-loose text-sm mb-10">
+                    行政書士（登録手続中） / 東京都行政書士会<br>
+                    代表社員 / AA WAVE合同会社（AI事業）
+                </p>
+                
+                <p class="text-slate-600 leading-loose text-sm mb-6">
                     国家公務員として中央省庁で24年間従事。内閣府 公益認定等委員会事務局では<strong>審査監督調査官</strong>を務め、万博関連法人のような国家規模の認定から企業財団の審査、さらにはガバナンス不全による「認定の取り消し」まで、あらゆるフェーズの審査実務を指揮。行政の厳格な審査基準と認定メカニズムの裏側を熟知しています。
                 </p>
-                <p>
-                    退官後、民間企業での勤務を経て、<a href="https://www.aawave.co.jp/" target="_blank" rel="noopener noreferrer" class="text-slate-900 border-b border-slate-900 hover:text-slate-500 hover:border-slate-500 transition-all">AA WAVE合同会社</a>での活動を通じ、自治体向け行政AIエージェントの開発プロジェクトにおいてプロジェクト責任者を務めるなど、官公庁の論理と最新テクノロジーの両方に触れてきました。
+                <p class="text-slate-600 leading-loose text-sm mb-8">
+                    退官後、民間企業での勤務を経て、<a href="https://www.aawave.co.jp/" target="_blank" rel="noopener noreferrer" class="text-slate-900 border-b border-slate-900 hover:text-slate-500 hover:border-slate-500 transition-colors">AA WAVE合同会社</a>での活動を通じ、自治体向け行政AIエージェントの開発プロジェクトにおいてプロジェクト責任者を務めるなど、官公庁の論理と最新テクノロジーの両方に触れてきました。<br>
+                    現在も同社での活動と並行し、行政書士として、法人の公的資金調達、公益法人運営、および国際法務に関する書面作成・法務支援を行っています。
                 </p>
-                <p>
-                    現在は行政書士として、法人の公的資金調達、公益法人運営、および国際法務に関する書面作成・法務支援を行っています。
-                </p>
+                
+                <!-- 修正: SNSリンクの目立たせ（アイコンボタン化） -->
+                <div class="flex flex-wrap gap-4 mt-8 pt-8 border-t border-slate-200">
+                    <!-- noteボタン -->
+                    <a href="#" target="_blank" rel="noopener noreferrer" class="inline-flex items-center px-6 py-3 bg-white border border-slate-200 text-sm font-medium text-slate-700 hover:bg-slate-50 hover:text-slate-900 transition-all rounded-sm shadow-sm group">
+                        <svg class="w-5 h-5 mr-3 text-slate-400 group-hover:text-green-500 transition-colors" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/>
+                        </svg>
+                        note で思考を読む
+                        <!-- ※行政書士業務専用の新規noteアカウント立ち上げ後に差し替え予定 -->
+                    </a>
+                    <!-- Xボタン -->
+                    <a href="https://x.com/HAtsumi621" target="_blank" rel="noopener noreferrer" class="inline-flex items-center px-6 py-3 bg-white border border-slate-200 text-sm font-medium text-slate-700 hover:bg-slate-50 hover:text-slate-900 transition-all rounded-sm shadow-sm group">
+                        <svg class="w-4 h-4 mr-3 text-slate-400 group-hover:text-slate-900 transition-colors" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                        </svg>
+                        X (Twitter)
+                    </a>
+                </div>
             </div>
         </div>
     </section>
@@ -299,8 +409,21 @@
                 <span class="text-xs font-medium tracking-widest text-slate-400 block mb-4">ご相談・お問い合わせ</span>
             </div>
             
-            <div class="text-slate-600 text-sm leading-loose mb-12 text-center">
-                <p>現状の課題や、審査に落ちた経緯など、まずはお気軽にお聞かせください。<br>事業のフェーズに合わせた最適なアプローチをご提案いたします。</p>
+            <div class="space-y-10 text-slate-600 text-sm leading-loose mb-16">
+                <div class="bg-slate-50 p-8 border border-slate-100">
+                    <h4 class="font-bold text-slate-900 mb-4 text-base">■ 簡易のお問い合わせ：無料</h4>
+                    <p>フォーム、メールまたはLINEにて、ご相談内容の概要をお送りください。<br>
+                    一往復のやり取りの範囲で、当研究所がお力になれる領域かをご回答いたします。</p>
+                </div>
+                <div class="bg-slate-50 p-8 border border-slate-100">
+                    <h4 class="font-bold text-slate-900 mb-4 text-base">■ 個別相談：30分 無料（オンライン）</h4>
+                    <p>事業の輪郭、現状の課題、過去の申請書類等をうかがった上で、想定される業務範囲をご提示いたします。<br>
+                    お見積もりは、相談後に書面にてご案内いたします。</p>
+                    <p class="text-xs text-slate-500 mt-6 pt-4 border-t border-slate-200 leading-relaxed">
+                        ※30分を超える場合、および継続的なご相談は、有料相談（◯◯,◯◯◯円/30分）に移行いたします。<br>
+                        ※行政書士法第10条の2第1項に基づく報酬額表は、当事務所内に掲示しております。
+                    </p>
+                </div>
             </div>
             
             <form class="space-y-8">
@@ -322,16 +445,18 @@
                     <label class="block text-xs font-medium text-slate-500 mb-2">ご相談内容・現状の課題</label>
                     <textarea rows="4" class="w-full border-b border-slate-300 bg-transparent py-2 focus:outline-none focus:border-slate-900 transition-colors text-slate-900 resize-none" placeholder="お悩みの点をご記入ください。"></textarea>
                 </div>
-                <div class="pt-8 flex flex-col sm:flex-row justify-center items-center gap-4">
-                    <button type="button" class="w-full sm:w-auto bg-slate-900 text-white text-sm tracking-widest px-12 py-4 hover:bg-slate-700 transition-colors">
-                        送信する
+                <!-- 修正: LINEボタンを並列で追加 -->
+                <div class="pt-8 flex flex-col md:flex-row justify-center gap-4">
+                    <button type="button" class="w-full md:w-auto inline-block bg-slate-900 text-white text-sm tracking-widest px-12 py-4 hover:bg-slate-700 transition-colors">
+                        メールで送信する
                     </button>
-                    <button type="button" class="w-full sm:w-auto bg-[#06C755] text-white text-sm tracking-widest px-12 py-4 hover:bg-[#05b34c] transition-colors flex items-center justify-center">
+                    <!-- 修正(最終仕上げ): LINEボタンの暫定処理。※LINE公式アカウント開設後に href を実URLに差し替え、onclick属性を削除 -->
+                    <a href="javascript:void(0);" onclick="alert('LINE公式アカウントは現在準備中です。お急ぎの場合はメールフォームをご利用ください。'); return false;" class="w-full md:w-auto inline-flex justify-center items-center bg-[#06C755] text-white text-sm font-bold tracking-widest px-12 py-4 hover:bg-[#05b34c] transition-colors">
                         <svg class="w-5 h-5 mr-2" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M24 10.304c0-5.369-5.383-9.738-12-9.738-6.616 0-12 4.369-12 9.738 0 4.814 4.269 8.846 10.036 9.608.391.084.922.258 1.057.592.122.303.079.778.039 1.085l-.171 1.027c-.053.303-.242 1.186 1.039.647 1.281-.54 6.911-4.069 9.428-6.967 1.739-1.907 2.572-3.844 2.572-5.992z"/>
+                            <path d="M22 10.4c0-4.3-4.5-7.8-10-7.8S2 6.1 2 10.4c0 3.8 3.5 7.1 8.2 7.7.3.1.8.3 1 .8l.3 1.9c0 .1.1.3 0 .4-.1.1-.3.1-.5.1L8.5 20c-1.2.6-6.5-3.3-6.5-9.6zM7.2 13h-.6c-.2 0-.4-.2-.4-.4V8.4c0-.2.2-.4.4-.4h.6c.2 0 .4.2.4.4v3.8h1.8c.2 0 .4.2.4.4v.6c0 .2-.2.4-.4.4zm3.6 0h-.6c-.2 0-.4-.2-.4-.4V8.4c0-.2.2-.4.4-.4h.6c.2 0 .4.2.4.4v4.2c0 .2-.2.4-.4.4zm2.5-3.6v3.2c0 .2-.2.4-.4.4h-.6c-.2 0-.4-.2-.4-.4V8.4c0-.2.2-.4.4-.4h.8c1.3 0 2.2 1.5 2.2 2.6V9.4zM18 8.4v4.2c0 .2-.2.4-.4.4h-.6c-.2 0-.4-.2-.4-.4V8.4c0-.2.2-.4.4-.4h.6c.2 0 .4.2.4.4zm-1.8 1.4L14.7 8.5c-.1-.1-.2-.1-.3-.1h-.5c-.2 0-.4.2-.4.4v4.2c0 .2.2.4.4.4h.6c.2 0 .4-.2.4-.4v-1.4l1.5 1.4c.1.1.2.1.3.1h.5c.2 0 .4-.2.4-.4V8.4c0-.2-.2-.4-.4-.4h-.6c-.2 0-.4.2-.4.4v1.4z"/>
                         </svg>
                         LINEで相談する
-                    </button>
+                    </a>
                 </div>
             </form>
         </div>
@@ -341,7 +466,9 @@
     <footer class="bg-slate-50 py-16 px-6 border-t border-slate-100">
         <div class="max-w-5xl mx-auto flex flex-col md:flex-row justify-between items-start text-sm">
             <div class="mb-8 md:mb-0">
-                <h2 class="text-slate-900 font-medium text-base mb-4">行政書士渥美洋行政策法務研究所</h2>
+                <h2 class="text-slate-900 font-medium text-base mb-1">行政書士渥美洋行政策法務研究所</h2>
+                <!-- 修正: 事務所名の直下に登録ステータスを記載 -->
+                <p class="text-xs text-slate-500 mb-4">東京都行政書士会所属（登録番号は登録完了後に掲載）</p>
                 <div class="text-slate-500 leading-loose">
                     <p>〒102-0071<br>東京都千代田区富士見1-5-4 3階</p>
                     <p class="mt-2 text-xs">
@@ -351,8 +478,10 @@
                 </div>
             </div>
             <div class="flex flex-col space-y-3 text-right">
+                <!-- 修正: SNS・外部リンクの整備 -->
                 <a href="#" class="text-slate-500 hover:text-slate-900 transition-colors">Note</a>
-                <a href="#" class="text-slate-500 hover:text-slate-900 transition-colors">X (Twitter)</a>
+                <!-- ※行政書士業務専用の新規noteアカウント立ち上げ後に差し替え予定 -->
+                <a href="https://x.com/HAtsumi621" target="_blank" rel="noopener noreferrer" class="text-slate-500 hover:text-slate-900 transition-colors">X (Twitter)</a>
             </div>
         </div>
         <div class="max-w-5xl mx-auto mt-12 pt-8 border-t border-slate-200 text-center text-[10px] text-slate-400 font-en tracking-wider">
