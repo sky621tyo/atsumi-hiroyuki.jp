@@ -439,12 +439,11 @@
                     <!-- 修正: SNSリンクの目立たせ（アイコンボタン化） -->
                     <div class="flex flex-wrap gap-4 mt-8 pt-8 border-t border-slate-200">
                         <!-- noteボタン -->
-                        <a href="#" target="_blank" rel="noopener noreferrer" class="inline-flex items-center px-6 py-3 bg-white border border-slate-200 text-lg font-medium text-slate-700 hover:bg-slate-50 hover:text-slate-900 transition-all rounded-sm shadow-sm group">
+                        <a href="https://note.com/legal_and_policy" target="_blank" rel="noopener noreferrer" class="inline-flex items-center px-6 py-3 bg-white border border-slate-200 text-lg font-medium text-slate-700 hover:bg-slate-50 hover:text-slate-900 transition-all rounded-sm shadow-sm group">
                             <svg class="w-5 h-5 mr-3 text-slate-600 group-hover:text-green-500 transition-colors" viewBox="0 0 24 24" fill="currentColor">
                                 <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/>
                             </svg>
                             note を読む
-                            <!-- ※行政書士業務専用の新規noteアカウント立ち上げ後に差し替え予定 -->
                         </a>
                         <!-- Xボタン -->
                         <a href="https://x.com/HAtsumi621" target="_blank" rel="noopener noreferrer" class="inline-flex items-center px-6 py-3 bg-white border border-slate-200 text-lg font-medium text-slate-700 hover:bg-slate-50 hover:text-slate-900 transition-all rounded-sm shadow-sm group">
@@ -456,6 +455,28 @@
                     </div>
                 </div> <!-- /テキスト枠 -->
             </div> <!-- /flex-row -->
+        </div>
+    </section>
+
+    <!-- Note Articles -->
+    <section id="note-articles" class="bg-slate-50 px-6 py-24 border-t border-slate-100">
+        <div class="max-w-5xl mx-auto">
+            <div class="mb-16 text-center">
+                <span class="text-base font-medium tracking-widest text-slate-600 block mb-4">活動実績・note</span>
+                <p class="text-lg text-slate-700">行政の論理と、現場での気づきを発信しています。</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <iframe class="note-embed" src="https://note.com/embed/notes/n3f285464d988" style="border: 0; display: block; width: 100%; padding: 0; margin: 0;" height="400" loading="lazy"></iframe>
+                <iframe class="note-embed" src="https://note.com/embed/notes/n56643fe528d7" style="border: 0; display: block; width: 100%; padding: 0; margin: 0;" height="400" loading="lazy"></iframe>
+                <iframe class="note-embed" src="https://note.com/embed/notes/n7a1ea61533a5" style="border: 0; display: block; width: 100%; padding: 0; margin: 0;" height="400" loading="lazy"></iframe>
+            </div>
+
+            <div class="mt-12 text-center">
+                <a href="https://note.com/legal_and_policy" target="_blank" rel="noopener noreferrer" class="inline-block border-b border-slate-400 pb-1 text-base font-medium text-slate-700 tracking-wider hover:text-slate-900 hover:border-slate-900 transition-colors duration-300">
+                    最新の記事一覧を見る &rarr;
+                </a>
+            </div>
         </div>
     </section>
 
@@ -567,5 +588,6 @@
         </div>
     </footer>
 
+    <script async src="https://note.com/scripts/embed.js" charset="utf-8"></script>
 </body>
 </html>
