@@ -64,14 +64,14 @@ module.exports = {
         "unit": "8px"
       },
       "fontFamily": {
-        "label-md": ["Noto Sans JP"],
-        "headline-md": ["Noto Serif JP"],
-        "body-lg": ["Noto Sans JP"],
-        "body-md": ["Noto Sans JP"],
-        "label-sm": ["Noto Sans JP"],
-        "display-lg": ["Noto Serif JP"],
-        "headline-lg": ["Noto Serif JP"],
-        "headline-lg-mobile": ["Noto Serif JP"],
+        "label-md": ["Noto Sans JP", "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", "Meiryo", "sans-serif"],
+        "headline-md": ["Noto Sans JP", "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", "Meiryo", "sans-serif"],
+        "body-lg": ["Noto Sans JP", "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", "Meiryo", "sans-serif"],
+        "body-md": ["Noto Sans JP", "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", "Meiryo", "sans-serif"],
+        "label-sm": ["Noto Sans JP", "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", "Meiryo", "sans-serif"],
+        "display-lg": ["Noto Sans JP", "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", "Meiryo", "sans-serif"],
+        "headline-lg": ["Noto Sans JP", "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", "Meiryo", "sans-serif"],
+        "headline-lg-mobile": ["Noto Sans JP", "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", "Meiryo", "sans-serif"],
         "en": ["Helvetica Neue", "Arial", "sans-serif"]
       },
       "fontSize": {
