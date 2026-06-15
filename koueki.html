@@ -1,49 +1,141 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>公益認定・移行認定の申請サポート｜行政書士 渥美洋行 政策法務研究所 ― 元審査監督調査官による支援</title>
-    <meta name="description" content="内閣府公益認定等委員会事務局の元・審査監督調査官が、公益認定・移行認定の申請をサポート。審査側の視点で、行政の論理に則った適切な申請書類を設計します。">
-    
-    <!-- OGP / Twitter Card -->
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="公益認定・移行認定の申請サポート｜行政書士 渥美洋行 政策法務研究所">
-    <meta property="og:description" content="内閣府公益認定等委員会事務局の元・審査監督調査官が、公益認定・移行認定の申請をサポート。審査側の視点で、行政の論理に則った適切な申請書類を設計します。">
-    <meta property="og:url" content="https://atsumi-hiroyuki.jp/koueki.html">
-    <meta property="og:image" content="https://atsumi-hiroyuki.jp/assets/images/og-image.jpg">
-    <meta property="og:site_name" content="行政書士 渥美洋行 政策法務研究所">
-    <meta name="twitter:card" content="summary_large_image">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;600;700&family=Noto+Sans+JP:wght@300;400;500;700&display=swap');
+<!DOCTYPE html><html class="scroll-smooth" lang="ja"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>公益認定・移行認定の申請サポート｜行政書士 渥美洋行 政策法務研究所</title>
+<meta name="description" content="内閣府公益認定等委員会事務局の元・審査監督調査官が、公益認定・移行認定の申請をサポート。審査側の視点で、行政の論理に則った適切な申請書類を設計します。">
 
-        body {
-            font-family: 'Noto Sans JP', sans-serif;
-            color: #1e293b;
-            background-color: #ffffff;
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-        }
-        .font-serif-jp { font-family: 'Noto Serif JP', serif; }
-        .font-en { font-family: 'Helvetica Neue', Arial, sans-serif; letter-spacing: 0.05em; }
-        html { scroll-behavior: smooth; }
-        ::selection { background-color: #cbd5e1; color: #0f172a; }
+<!-- OGP / Twitter Card -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="公益認定・移行認定の申請サポート｜行政書士 渥美洋行 政策法務研究所">
+<meta property="og:description" content="内閣府公益認定等委員会事務局の元・審査監督調査官が、公益認定・移行認定の申請をサポート。審査側の視点で、行政の論理に則った適切な申請書類を設計します。">
+<meta property="og:url" content="https://atsumi-hiroyuki.jp/koueki.html">
+<meta property="og:image" content="https://atsumi-hiroyuki.jp/assets/images/og-image.jpg">
+<meta property="og:site_name" content="行政書士 渥美洋行 政策法務研究所">
+<meta name="twitter:card" content="summary_large_image">
 
-        /* ステップ接続線 */
-        .step-connector { position: relative; }
-        .step-connector::after {
-            content: '';
-            position: absolute;
-            left: 1.25rem;
-            top: 100%;
-            width: 1px;
-            height: 2rem;
-            background: #cbd5e1;
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600&family=Noto+Serif+JP:wght@600;700&display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-dim": "#cbdbf5",
+                        "on-error-container": "#93000a",
+                        "tertiary-fixed-dim": "#bcc7de",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-bright": "#f8f9ff",
+                        "on-tertiary": "#ffffff",
+                        "outline-variant": "#c6c6cd",
+                        "on-secondary-fixed": "#271900",
+                        "on-primary-fixed": "#131b2e",
+                        "primary-fixed-dim": "#bec6e0",
+                        "error-container": "#ffdad6",
+                        "surface-container-highest": "#d3e4fe",
+                        "surface-tint": "#565e74",
+                        "on-secondary": "#ffffff",
+                        "on-primary-fixed-variant": "#3f465c",
+                        "tertiary-fixed": "#d8e3fb",
+                        "on-surface-variant": "#45464d",
+                        "inverse-primary": "#bec6e0",
+                        "surface-slate": "#F8FAFC",
+                        "on-surface": "#0b1c30",
+                        "prestige-gold": "#C5A059",
+                        "surface": "#f8f9ff",
+                        "on-background": "#0b1c30",
+                        "surface-container": "#e5eeff",
+                        "inverse-on-surface": "#eaf1ff",
+                        "background": "#f8f9ff",
+                        "on-tertiary-fixed-variant": "#3c475a",
+                        "surface-container-low": "#eff4ff",
+                        "on-primary": "#ffffff",
+                        "tertiary": "#000000",
+                        "on-secondary-container": "#785f34",
+                        "tertiary-container": "#111c2d",
+                        "secondary": "#735a30",
+                        "primary": "#000000",
+                        "primary-container": "#131b2e",
+                        "on-primary-container": "#7c839b",
+                        "secondary-container": "#fddba5",
+                        "on-tertiary-container": "#79849a",
+                        "error": "#ba1a1a",
+                        "on-secondary-fixed-variant": "#5a431b",
+                        "surface-variant": "#d3e4fe",
+                        "primary-fixed": "#dae2fd",
+                        "on-tertiary-fixed": "#111c2d",
+                        "outline": "#76777d",
+                        "inverse-surface": "#213145",
+                        "secondary-fixed-dim": "#e3c28e",
+                        "on-error": "#ffffff",
+                        "surface-container-high": "#dce9ff",
+                        "surface-ivory": "#FDFDFB",
+                        "secondary-fixed": "#ffdeab"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "margin-desktop": "48px",
+                        "section-gap": "80px",
+                        "margin-mobile": "16px",
+                        "container-max": "1200px",
+                        "unit": "8px",
+                        "gutter": "24px"
+                    },
+                    "fontFamily": {
+                        "label-md": ["Noto Sans JP"],
+                        "headline-lg-mobile": ["Noto Serif JP"],
+                        "label-sm": ["Noto Sans JP"],
+                        "headline-lg": ["Noto Serif JP"],
+                        "display-lg": ["Noto Serif JP"],
+                        "body-md": ["Noto Sans JP"],
+                        "body-lg": ["Noto Sans JP"],
+                        "headline-md": ["Noto Serif JP"]
+                    },
+                    "fontSize": {
+                        "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "500" }],
+                        "headline-lg-mobile": ["24px", { "lineHeight": "34px", "fontWeight": "700" }],
+                        "label-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.08em", "fontWeight": "600" }],
+                        "headline-lg": ["32px", { "lineHeight": "44px", "letterSpacing": "0.01em", "fontWeight": "700" }],
+                        "display-lg": ["48px", { "lineHeight": "64px", "letterSpacing": "0.02em", "fontWeight": "700" }],
+                        "body-md": ["16px", { "lineHeight": "26px", "fontWeight": "400" }],
+                        "body-lg": ["18px", { "lineHeight": "30px", "fontWeight": "400" }],
+                        "headline-md": ["24px", { "lineHeight": "36px", "fontWeight": "600" }]
+                    }
+                }
+            }
         }
-        .step-connector:last-child::after { display: none; }
+    </script>
+<style type="text/tailwindcss">
+        @layer utilities {
+            .ambient-shadow {
+                box-shadow: 0 20px 40px -10px rgba(19, 27, 46, 0.05);
+            }
+            .glass-panel {
+                background: rgba(255, 255, 255, 0.85);
+                backdrop-filter: blur(12px);
+                border: 1px solid rgba(100, 116, 139, 0.2);
+            }
+            .step-connector { position: relative; }
+            .step-connector::after {
+                content: "";
+                position: absolute;
+                left: 1.25rem;
+                top: 100%;
+                width: 1px;
+                height: 2rem;
+                background: #c6c6cd;
+            }
+            .step-connector:last-child::after { display: none; }
+        }
+        body { background-color: #f8f9ff; color: #0b1c30; }
+        ::selection { background-color: #dce9ff; color: #0b1c30; }
     </style>
-    <!-- FAQ構造化データ -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -92,7 +184,6 @@
       ]
     }
     </script>
-
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -134,217 +225,206 @@
     }
     </script>
 </head>
-<body class="selection:bg-slate-200 text-slate-800">
-
-    <!-- ヘッダー -->
-    <header class="fixed w-full bg-white/90 backdrop-blur-sm z-50 transition-all duration-300 border-b border-slate-50">
-        <div class="max-w-5xl mx-auto px-6 py-5 flex justify-between items-center">
-            <a href="index.html" class="text-lg font-medium tracking-widest text-slate-900 hover:text-slate-700 transition-colors">
-                行政書士 渥美洋行 政策法務研究所
-            </a>
-            <nav class="hidden md:flex space-x-8 items-center">
-                <a href="index.html#statement" class="text-base font-medium text-slate-700 hover:text-slate-900 transition-colors">考え方</a>
-                <a href="index.html#services" class="text-base font-medium text-slate-700 hover:text-slate-900 transition-colors">業務内容</a>
-                <a href="fees.html" class="text-base font-medium text-slate-700 hover:text-slate-900 transition-colors">報酬額表</a>
-                <a href="https://note.com/legal_and_policy" target="_blank" rel="noopener noreferrer" class="text-base font-medium text-slate-700 hover:text-slate-900 transition-colors">note</a>
-                <a href="#faq" class="text-base font-medium text-slate-700 hover:text-slate-900 transition-colors">よくあるご質問</a>
-                <a href="#contact" class="text-base font-medium text-slate-900 border-b border-slate-900 pb-1 hover:text-slate-700 hover:border-slate-500 transition-all">
-                    ご相談・お問い合わせ
-                </a>
-            </nav>
-        </div>
-    </header>
-
-
-    <!-- =========================================
-         1. ファーストビュー
-         ========================================= -->
-    <section class="pt-44 pb-28 px-6">
-        <div class="max-w-3xl mx-auto">
-            <div class="mb-10">
-                <span class="inline-block text-sm font-medium tracking-widest text-slate-600 border border-slate-200 px-4 py-2">
-                    公益認定・移行認定の申請支援
-                </span>
-            </div>
-
-            <h1 class="font-serif-jp text-3xl md:text-5xl leading-[1.8] md:leading-[1.6] text-slate-900 mb-12">
-                公益認定等委員会事務局の<br>
-                認定審査経験者が、<br class="hidden md:block">
-                あなたの申請を<wbr>サポートします。
-            </h1>
-
-            <div class="space-y-6 text-slate-800 leading-loose text-lg md:text-lg mb-16">
-                <p>
-                    内閣府で公益認定の審査・監督に携わってきた経験をもとに、<br class="hidden md:block">
-                    「適切な説明」となる申請書類を設計する。それが当研究所の仕事です。
-                </p>
-                <p>
-                    公益認定をお考えの法人の方へ——<br class="hidden md:block">
-                    まずは審査側の視点で、貴法人の論点を整理いたします。
-                </p>
-            </div>
-
-            <div class="flex flex-col sm:flex-row gap-4">
-                <a href="index.html#contact" class="inline-block bg-slate-900 text-white text-lg tracking-widest px-10 py-4 hover:bg-slate-700 transition-colors text-center">
-                    まずは初回 個別相談（30分・無料）
-                </a>
-            </div>
-        </div>
-    </section>
-
-
-    <!-- =========================================
-         2. 共感 — なぜ公益認定の審査は長期化・難航するのか
-         ========================================= -->
-    <section id="empathy" class="bg-slate-50 px-6 py-32 border-y border-slate-100">
-        <div class="max-w-3xl mx-auto">
-            <div class="mb-16">
-                <span class="text-base font-medium tracking-widest text-slate-600">公益認定 申請のつまずき</span>
-            </div>
-
-            <h2 class="font-serif-jp text-3xl md:text-4xl text-slate-900 mb-12 leading-relaxed">
-                なぜ、公益認定の審査は<br class="hidden md:block">長期化・難航するのか。
-            </h2>
-
-            <div class="space-y-8 text-slate-800 leading-loose text-lg md:text-lg font-serif-jp">
-                <p>
-                    公益認定の申請書を拝見していて感じるのは、多くの法人が真摯に事業に取り組んでおられるにもかかわらず、その「真摯さ」が申請書の上で十分に伝わっていないケースが少なくない、ということです。
-                </p>
-
-                <p>
+<body class="bg-surface-slate text-on-surface font-body-md antialiased min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<nav class="bg-surface-ivory dark:bg-surface-container-lowest fixed top-0 w-full z-50 border-b border-outline-variant/20 dark:border-outline/10 bg-surface-ivory/95 backdrop-blur-sm transition-all duration-300">
+<div class="flex justify-between items-center h-20 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<a class="font-headline-md text-headline-md font-bold text-primary dark:text-primary-fixed tracking-tight opacity-100 hover:opacity-80 transition-opacity duration-200" href="index.html">行政書士 渥美洋行 政策法務研究所</a>
+<div class="hidden md:flex space-x-8 items-center">
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-on-primary-container hover:text-prestige-gold transition-colors duration-300" href="index.html">ホーム</a>
+<a class="font-label-md text-label-md text-prestige-gold font-bold border-b-2 border-prestige-gold pb-1 hover:text-prestige-gold dark:hover:text-prestige-gold transition-all duration-300" href="koueki.html">公益法人支援</a>
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-on-primary-container hover:text-prestige-gold transition-colors duration-300" href="fees.html">報酬額表</a>
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-on-primary-container hover:text-prestige-gold transition-colors duration-300" href="https://note.com/legal_and_policy" target="_blank" rel="noopener noreferrer">
+    note
+</a>
+<a class="bg-primary-container text-white px-6 py-3 rounded hover:bg-primary transition-colors font-label-md text-label-md ambient-shadow flex items-center space-x-2 ml-4" href="index.html#contact">
+<span class="">初回無料相談を予約</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined text-[28px]">menu</span>
+</button>
+</div>
+</nav>
+<main class="flex-grow pt-24 md:pt-32">
+<!-- Hero Section -->
+<section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mb-section-gap">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
+<div class="md:col-span-6 space-y-6 md:pr-12">
+<p class="font-label-md text-label-md text-prestige-gold tracking-widest uppercase">公益認定・移行認定の申請支援</p>
+<h1 class="font-display-lg text-display-lg font-bold text-primary leading-tight">
+                        公益認定等委員会事務局の<br>
+                        認定審査経験者が、<br>
+                        あなたの申請をサポートします。
+                    </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mt-6 leading-relaxed border-l-2 border-prestige-gold pl-6">
+                        内閣府で公益認定の審査・監督に携わってきた経験をもとに、<br>
+                        「適切な説明」となる申請書類を設計する。それが当研究所の仕事です。
+                    </p>
+<p class="font-body-md text-body-md text-on-surface-variant mt-4">
+                        公益認定をお考えの法人の方へ——<br>
+                        まずは審査側の視点で、貴法人の論点を整理いたします。
+                    </p>
+<div class="mt-10">
+<a class="inline-flex items-center justify-center bg-prestige-gold text-white px-8 py-4 rounded hover:bg-secondary transition-colors font-label-md text-label-md ambient-shadow" href="index.html#contact">
+                            まずは初回 個別相談（30分・無料）
+                            <span class="material-symbols-outlined ml-2">chevron_right</span>
+</a>
+</div>
+</div>
+<div class="md:col-span-6 mt-12 md:mt-0 relative">
+<div class="absolute inset-0 bg-primary-container opacity-5 transform translate-x-4 translate-y-4 rounded-lg"></div>
+<img alt="A professional legal consultant reviewing documents in a well-lit, modern office. The scene is bright and meticulously organized, reflecting a prestigious administrative law practice. The lighting is cool and clear, emphasizing trust and authority. The consultant wears a tailored navy suit." class="w-full h-auto object-cover rounded-lg ambient-shadow relative z-10 border border-outline-variant/20" src="assets/images/koueki-hero.png">
+</div>
+</div>
+</section>
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop"><hr class="border-t border-outline-variant/30 mb-section-gap"></div>
+<!-- Problem Statement -->
+<section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mb-section-gap">
+<div class="text-center mb-16">
+<p class="font-label-md text-label-md text-prestige-gold tracking-widest mb-4">公益認定 申請のつまずき</p>
+<h2 class="font-headline-lg text-headline-lg font-bold text-primary">なぜ、公益認定の審査は<br>長期化・難航するのか。</h2>
+</div>
+<div class="max-w-3xl mx-auto space-y-8">
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed text-center mb-12">
+                    公益認定の申請書を拝見していて感じるのは、多くの法人が真摯に事業に取り組んでおられるにもかかわらず、その「真摯さ」が申請書の上で十分に伝わっていないケースが少なくない、ということです。<br><br>
                     審査の現場で手が止まるのは、たとえばこうした局面です。
                 </p>
-
-                <ul class="space-y-5 ml-2 my-8">
-                    <li class="flex items-start">
-                        <span class="mr-3 font-bold text-slate-600">一、</span>
-                        <span><strong class="text-slate-900">要件適合性の説明が不足している。</strong><br>「自分たちが公益目的事業を行っている」ことが自明であるという前提で書かれており、なぜその事業が公益認定法上の「公益目的事業」に該当するのか——根拠と論理の接続が抜け落ちている。</span>
-                    </li>
-                    <li class="flex items-start">
-                        <span class="mr-3 font-bold text-slate-600">二、</span>
-                        <span><strong class="text-slate-900">事業計画と公益目的の不整合。</strong><br>事業計画の記述が抽象的で、公益目的事業とそれ以外の事業の境界が曖昧なまま。審査側には「仕分けができていない」と映ってしまう。</span>
-                    </li>
-                    <li class="flex items-start">
-                        <span class="mr-3 font-bold text-slate-600">三、</span>
-                        <span><strong class="text-slate-900">収支予算の詰めが甘い。</strong><br>収支相償、公益目的事業比率、遊休財産規制——財務三基準は単なる数値チェックではなく、「その数字がなぜその水準なのか」を構造的に説明できるかが問われる。数字だけ合わせても、根拠が弱ければ補正を求められる。</span>
-                    </li>
-                </ul>
-
-                <p>
-                    こうしたつまずきは、法人側の力量の問題ではありません。<br>
-                    審査する側が何を見ているか——その視点を知る機会がなかっただけです。
-                </p>
-            </div>
-        </div>
-    </section>
-
-
-    <!-- =========================================
-         3. 独自価値 — 審査側にいたからわかること
-         ========================================= -->
-    <section id="value" class="px-6 py-32 border-b border-slate-100">
-        <div class="max-w-3xl mx-auto">
-            <div class="mb-16">
-                <span class="text-base font-medium tracking-widest text-slate-600">審査側の視点</span>
-            </div>
-
-            <h2 class="font-serif-jp text-2xl md:text-3xl text-slate-900 mb-12 leading-relaxed">
-                審査側にいたからわかること。
-            </h2>
-
-            <div class="space-y-8 text-slate-800 leading-loose text-lg md:text-lg font-serif-jp">
-                <p>
-                    代表の渥美洋行は、内閣府 公益認定等委員会事務局にて<strong class="text-slate-900">審査監督調査官</strong>を務めてまいりました。
-                </p>
-
-                <p>
-                    公益認定の審査において、書類のどの部分を重点的に確認するのか。どのような記述があれば審査が円滑に進み、どのような不備があると補正を求められるのか。認定後の監督において、何が問題視されるのか——そうした判断の勘所を、実務として経験してきました。
-                </p>
-
-                <p>
-                    公益認定は、ただの「法的な手続き」ではありません。認定を受けた法人には、社会的信用の劇的な向上、寄付金集めの大きな後押しとなる税制優遇、そして優秀な人材を獲得する採用力の強化といった、法人の持続的な発展と事業推進において絶大なメリットがもたらされます。
-                </p>
-
-                <p>
-                    当研究所が提供するのは、その未来を手にするための、審査官の視点に基づく確実な申請書類の設計です。
-                </p>
-
-                <div class="bg-slate-50 border border-slate-100 p-8 my-10 rounded-sm">
-                    <ul class="space-y-4 text-lg">
-                        <li class="flex items-start">
-                            <span class="mr-3 text-slate-600">—</span>
-                            <span>審査側が求める<strong class="text-slate-900">論理構成</strong>で申請書類を組み立てる</span>
-                        </li>
-                        <li class="flex items-start">
-                            <span class="mr-3 text-slate-600">—</span>
-                            <span>補正が発生しやすいポイントを<strong class="text-slate-900">事前に潰す</strong></span>
-                        </li>
-                        <li class="flex items-start">
-                            <span class="mr-3 text-slate-600">—</span>
-                            <span>認定後の定期報告・監査にも耐えうる<strong class="text-slate-900">書類の土台</strong>をつくる</span>
-                        </li>
-                    </ul>
-                </div>
-
-                <p>
-                    書類を「代書」するのではなく、法人の事業の本質を審査側の言語に翻訳すること。<br>
-                    それが、審査する側にいた者だからこそできる仕事だと考えています。
-                </p>
-            </div>
-        </div>
-    </section>
-
+<div class="bg-surface-ivory border border-outline-variant/20 rounded-lg p-8 ambient-shadow relative overflow-hidden">
+<div class="absolute top-0 left-0 w-2 h-full bg-primary-container"></div>
+<div class="flex items-start space-x-6">
+<div class="flex-shrink-0 mt-1 text-prestige-gold font-headline-md text-headline-md">一、</div>
+<div>
+<h3 class="font-headline-md text-headline-md font-bold text-primary mb-3">要件適合性の説明が不足している。</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                                「自分たちが公益目的事業を行っている」ことが自明であるという前提で書かれており、なぜその事業が公益認定法上の「公益目的事業」に該当するのか——根拠と論理の接続が抜け落ちている。
+                            </p>
+</div>
+</div>
+</div>
+<div class="bg-surface-ivory border border-outline-variant/20 rounded-lg p-8 ambient-shadow relative overflow-hidden">
+<div class="absolute top-0 left-0 w-2 h-full bg-primary-container"></div>
+<div class="flex items-start space-x-6">
+<div class="flex-shrink-0 mt-1 text-prestige-gold font-headline-md text-headline-md">二、</div>
+<div>
+<h3 class="font-headline-md text-headline-md font-bold text-primary mb-3">事業計画と公益目的の不整合。</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                                事業計画の記述が抽象的で、公益目的事業とそれ以外の事業の境界が曖昧なまま。審査側には「仕分けができていない」と映ってしまう。
+                            </p>
+</div>
+</div>
+</div>
+<div class="bg-surface-ivory border border-outline-variant/20 rounded-lg p-8 ambient-shadow relative overflow-hidden">
+<div class="absolute top-0 left-0 w-2 h-full bg-primary-container"></div>
+<div class="flex items-start space-x-6">
+<div class="flex-shrink-0 mt-1 text-prestige-gold font-headline-md text-headline-md">三、</div>
+<div>
+<h3 class="font-headline-md text-headline-md font-bold text-primary mb-3">収支予算の詰めが甘い。</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                                収支相償、公益目的事業比率、遊休財産規制——財務三基準は単なる数値チェックではなく、「その数字がなぜその水準なのか」を構造的に説明できるかが問われる。数字だけ合わせても、根拠が弱ければ補正を求められる。
+                            </p>
+</div>
+</div>
+</div>
+<div class="text-center mt-12 bg-surface-dim p-8 rounded-lg border border-outline-variant/20">
+<p class="font-body-md text-body-md text-primary font-medium leading-relaxed">
+                        こうしたつまずきは、法人側の力量の問題ではありません。<br>
+                        審査する側が何を見ているか——その視点を知る機会がなかっただけです。
+                    </p>
+</div>
+</div>
+</section>
+<!-- Value Proposition -->
+<section class="bg-surface-ivory py-section-gap border-y border-outline-variant/20 mb-section-gap">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
+<div class="md:col-span-5 relative order-2 md:order-1 mt-12 md:mt-0">
+<div class="absolute inset-0 bg-prestige-gold opacity-10 transform -translate-x-4 translate-y-4 rounded-lg"></div>
+<img alt="A professional portrait illustration of Hiroyuki Atsumi, the representative consultant." class="w-full h-auto object-cover rounded-lg ambient-shadow relative z-10 border border-outline-variant/20" src="assets/images/profile-illustration.png">
+</div>
+<div class="md:col-span-7 md:pl-12 order-1 md:order-2">
+<p class="font-label-md text-label-md text-prestige-gold tracking-widest mb-4">審査側の視点</p>
+<h2 class="font-headline-lg text-headline-lg font-bold text-primary mb-8">審査側にいたからわかること。</h2>
+<div class="space-y-6 font-body-md text-body-md text-on-surface-variant leading-relaxed">
+<p class="">
+                                代表の渥美洋行は、内閣府 公益認定等委員会事務局にて<strong>審査監督調査官</strong> を務めてまいりました。
+                            </p>
+<p class="">
+                                公益認定の審査において、書類のどの部分を重点的に確認するのか。どのような記述があれば審査が円滑に進み、どのような不備があると補正を求められるのか。認定後の監督において、何が問題視されるのか——そうした判断の勘所を、実務として経験してきました。
+                            </p>
+<p class="">
+                                当研究所が提供するのは、その未来を手にするための、審査官の視点に基づく確実な申請書類の設計です。
+                            </p>
+<ul class="space-y-4 mt-8 bg-surface-slate p-6 rounded border border-outline-variant/20">
+<li class="flex items-start">
+<span class="material-symbols-outlined text-prestige-gold mr-3 mt-1">check_circle</span>
+<span class="">審査側が求める<strong>論理構成</strong> で申請書類を組み立てる</span>
+</li>
+<li class="flex items-start">
+<span class="material-symbols-outlined text-prestige-gold mr-3 mt-1">check_circle</span>
+<span class="">補正が発生しやすいポイントを<strong>事前に潰す</strong></span>
+</li>
+<li class="flex items-start">
+<span class="material-symbols-outlined text-prestige-gold mr-3 mt-1">check_circle</span>
+<span class="">認定後の定期報告・監査にも耐えうる<strong>書類の土台</strong> をつくる</span>
+</li>
+</ul>
+<p class="font-medium text-primary mt-8 border-l-4 border-primary-container pl-4">
+                                書類を「代書」するのではなく、法人の事業の本質を審査側の言語に翻訳すること。<br>
+                                それが、審査する側にいた者だからこそできる仕事だと考えています。
+                            </p>
+</div>
+</div>
+</div>
+</div>
+</section>
 
     <!-- =========================================
          4. 時流 — 新公益法人制度で申請はどう変わるか
          ========================================= -->
-    <section id="new-system" class="bg-slate-50 px-6 py-32 border-b border-slate-100">
+    <section id="new-system" class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mb-section-gap">
         <div class="max-w-3xl mx-auto">
-            <div class="mb-16">
-                <span class="text-base font-medium tracking-widest text-slate-600">新公益法人制度と申請</span>
+            <div class="text-center mb-16">
+                <p class="font-label-md text-label-md text-prestige-gold tracking-widest mb-4">新公益法人制度と申請</p>
+                <h2 class="font-headline-lg text-headline-lg font-bold text-primary mb-12 leading-relaxed">
+                    2025年4月施行——<br class="hidden md:block">
+                    新制度で、公益認定の申請はどう変わるか。
+                </h2>
             </div>
 
-            <h2 class="font-serif-jp text-2xl md:text-3xl text-slate-900 mb-12 leading-relaxed">
-                2025年4月施行——<br class="hidden md:block">
-                新制度で、公益認定の申請はどう変わるか。
-            </h2>
-
-            <div class="space-y-8 text-slate-800 leading-loose text-lg md:text-lg font-serif-jp">
+            <div class="space-y-8 text-on-surface-variant leading-loose font-body-md text-body-md">
                 <p>
-                    2025年4月に施行された改正公益法人制度は、「公益法人をより活動しやすくする」ことを目的とした大きな転換です。<strong class="text-slate-900">申請を検討されている法人にとって、いまは制度の追い風が吹いている時期</strong>と言えます。
+                    2025年4月に施行された改正公益法人制度は、「公益法人をより活動しやすくする」ことを目的とした大きな転換です。<strong class="text-primary font-bold">申請を検討されている法人にとって、いまは制度の追い風が吹いている時期</strong>と言えます。
                 </p>
 
                 <div class="space-y-8 my-10">
-                    <div class="flex flex-col md:flex-row gap-6 md:gap-12">
+                    <div class="flex flex-col md:flex-row gap-6 md:gap-12 bg-surface-ivory border border-outline-variant/20 p-8 rounded-lg ambient-shadow">
                         <div class="w-full md:w-1/3">
-                            <h4 class="font-bold text-slate-900 text-lg mb-1">財務規律の柔軟化</h4>
-                            <p class="text-base text-slate-600">申請時の設計に影響</p>
+                            <h4 class="font-bold text-primary text-body-lg mb-1">財務規律の柔軟化</h4>
+                            <p class="font-label-md text-label-md text-prestige-gold">申請時の設計に影響</p>
                         </div>
-                        <div class="w-full md:w-2/3 text-lg text-slate-800 leading-loose">
+                        <div class="w-full md:w-2/3 leading-relaxed">
                             収支相償の判定方法が見直され、中期的な収支均衡が認められるようになりました。これにより、単年度で赤字が生じても直ちに基準抵触とならない余地が広がり、より現実的な収支計画を設計できるようになっています。
                         </div>
                     </div>
 
-                    <hr class="border-slate-100">
-
-                    <div class="flex flex-col md:flex-row gap-6 md:gap-12">
+                    <div class="flex flex-col md:flex-row gap-6 md:gap-12 bg-surface-ivory border border-outline-variant/20 p-8 rounded-lg ambient-shadow">
                         <div class="w-full md:w-1/3">
-                            <h4 class="font-bold text-slate-900 text-lg mb-1">行政手続の合理化</h4>
-                            <p class="text-base text-slate-600">申請プロセスに影響</p>
+                            <h4 class="font-bold text-primary text-body-lg mb-1">行政手続の合理化</h4>
+                            <p class="font-label-md text-label-md text-prestige-gold">申請プロセスに影響</p>
                         </div>
-                        <div class="w-full md:w-2/3 text-lg text-slate-800 leading-loose">
+                        <div class="w-full md:w-2/3 leading-relaxed">
                             変更届出制の拡大や、届出・報告のデジタル化が進みます。申請プロセス自体は従前と大きく変わりませんが、認定後の手続負担が軽減されることで、公益法人格を持つことのハードルが相対的に下がっています。
                         </div>
                     </div>
 
-                    <hr class="border-slate-100">
-
-                    <div class="flex flex-col md:flex-row gap-6 md:gap-12">
+                    <div class="flex flex-col md:flex-row gap-6 md:gap-12 bg-surface-ivory border border-outline-variant/20 p-8 rounded-lg ambient-shadow">
                         <div class="w-full md:w-1/3">
-                            <h4 class="font-bold text-slate-900 text-lg mb-1">ガバナンス要件</h4>
-                            <p class="text-base text-slate-600">組織体制の設計に影響</p>
+                            <h4 class="font-bold text-primary text-body-lg mb-1">ガバナンス要件</h4>
+                            <p class="font-label-md text-label-md text-prestige-gold">組織体制の設計に影響</p>
                         </div>
-                        <div class="w-full md:w-2/3 text-lg text-slate-800 leading-loose">
+                        <div class="w-full md:w-2/3 leading-relaxed">
                             外部理事・監事等の設置義務化、会計監査人の設置基準の見直しなど、ガバナンス体制の強化が求められます。申請時点で、認定後に求められるガバナンス体制を見据えた組織設計が必要です。
                         </div>
                     </div>
@@ -355,11 +435,11 @@
                     審査側で制度運用に携わってきた経験が、ここでも活きると考えています。
                 </p>
 
-                <div class="bg-white border border-slate-200 p-6 mt-10 rounded-sm">
-                    <p class="text-base text-slate-700 leading-relaxed">
+                <div class="glass-panel border border-outline-variant/20 p-6 mt-10 rounded-lg">
+                    <p class="text-body-md text-on-surface-variant leading-relaxed">
                         ※ 認定取得後の定期提出書類の作成や理事会運営などの法人運営支援は、引き続き当研究所にて承ります。<br>
                         ※ 法人の外部理事・監事への就任については、代表の渥美が「個人の専門家」としてお引き受けいたします。<br>
-                        <a href="https://www.aawave.co.jp/personal/" target="_blank" rel="noopener noreferrer" class="text-slate-900 border-b border-slate-900 hover:text-slate-700 hover:border-slate-500 transition-colors mt-1 inline-block">
+                        <a href="https://www.aawave.co.jp/personal/" target="_blank" rel="noopener noreferrer" class="text-primary font-bold border-b-2 border-primary hover:text-prestige-gold hover:border-prestige-gold transition-colors mt-2 inline-block">
                             → 外部役員就任に関するご案内（個人のページ）
                         </a>
                     </p>
@@ -368,39 +448,36 @@
         </div>
     </section>
 
-
     <!-- =========================================
          5. 支援メニュー（3段ロケット）
          ========================================= -->
-    <section id="services" class="px-6 py-32 border-b border-slate-100">
-        <div class="max-w-4xl mx-auto">
-            <div class="mb-16">
-                <span class="text-base font-medium tracking-widest text-slate-600">支援メニュー</span>
+    <section id="services-menu" class="bg-surface-slate py-section-gap border-y border-outline-variant/20 mb-section-gap">
+        <div class="max-w-4xl mx-auto px-margin-mobile md:px-margin-desktop">
+            <div class="text-center mb-16">
+                <p class="font-label-md text-label-md text-prestige-gold tracking-widest mb-4">支援メニュー</p>
+                <h2 class="font-headline-lg text-headline-lg font-bold text-primary mb-6 leading-relaxed">
+                    公益認定申請の支援メニューと料金
+                </h2>
+                <p class="text-on-surface-variant text-body-lg leading-loose max-w-2xl mx-auto">
+                    まず論点を整理し、次に書類を診断し、そこから申請サポートへ。<br>
+                    段階を踏んで進められる設計にしています。
+                </p>
             </div>
-
-            <h2 class="font-serif-jp text-2xl md:text-3xl text-slate-900 mb-6 leading-relaxed">
-                公益認定申請の支援メニューと料金
-            </h2>
-
-            <p class="text-slate-700 text-lg leading-loose mb-16 max-w-2xl">
-                まず論点を整理し、次に書類を診断し、そこから申請サポートへ。<br>
-                段階を踏んで進められる設計にしています。
-            </p>
 
             <!-- ステップ1 -->
             <div class="space-y-0">
                 <div class="step-connector">
                     <div class="flex items-start gap-6 mb-8">
-                        <div class="flex-shrink-0 w-10 h-10 bg-slate-900 text-white rounded-full flex items-center justify-center text-lg font-en font-bold">1</div>
-                        <div class="flex-1 bg-slate-50 border border-slate-100 p-8 rounded-sm">
-                            <div class="flex flex-col md:flex-row md:justify-between md:items-start gap-4 mb-4">
+                        <div class="flex-shrink-0 w-12 h-12 bg-primary-container text-white rounded-full flex items-center justify-center font-headline-md font-bold shadow-md">1</div>
+                        <div class="flex-1 glass-panel border border-outline-variant/20 p-8 rounded-lg">
+                            <div class="flex flex-col md:flex-row md:justify-between md:items-start gap-4 mb-4 border-b border-outline-variant/20 pb-4">
                                 <div>
-                                    <h4 class="font-bold text-slate-900 text-lg mb-1">公益認定 スポット相談</h4>
-                                    <p class="text-base text-slate-600">審査側視点での論点整理</p>
+                                    <h4 class="font-bold text-primary text-headline-md mb-1">公益認定 スポット相談</h4>
+                                    <p class="font-label-md text-label-md text-prestige-gold">審査側視点での論点整理</p>
                                 </div>
-                                <span class="text-lg font-bold text-slate-900 whitespace-nowrap">33,000円<span class="text-base font-normal text-slate-600 ml-1">（税込）</span></span>
+                                <span class="text-headline-md font-bold text-primary whitespace-nowrap">33,000円<span class="text-label-md font-normal text-on-surface-variant ml-1">（税込）</span></span>
                             </div>
-                            <p class="text-lg text-slate-800 leading-loose">
+                            <p class="font-body-md text-on-surface-variant leading-loose">
                                 約60分・オンライン。事前の書類読み込みは行わず、その場でお話を伺いながら、審査側の視点で論点を整理します。「現在の体制で公益認定の要件を満たし得るか」「どこから手をつけるべきか」を把握する最初の一歩です。
                             </p>
                         </div>
@@ -410,16 +487,16 @@
                 <!-- ステップ2 -->
                 <div class="step-connector">
                     <div class="flex items-start gap-6 mb-8">
-                        <div class="flex-shrink-0 w-10 h-10 bg-slate-900 text-white rounded-full flex items-center justify-center text-lg font-en font-bold">2</div>
-                        <div class="flex-1 bg-slate-50 border border-slate-100 p-8 rounded-sm">
-                            <div class="flex flex-col md:flex-row md:justify-between md:items-start gap-4 mb-4">
+                        <div class="flex-shrink-0 w-12 h-12 bg-primary-container text-white rounded-full flex items-center justify-center font-headline-md font-bold shadow-md">2</div>
+                        <div class="flex-1 glass-panel border border-outline-variant/20 p-8 rounded-lg">
+                            <div class="flex flex-col md:flex-row md:justify-between md:items-start gap-4 mb-4 border-b border-outline-variant/20 pb-4">
                                 <div>
-                                    <h4 class="font-bold text-slate-900 text-lg mb-1">公益認定 事前診断</h4>
-                                    <p class="text-base text-slate-600">書類確認のうえ助言</p>
+                                    <h4 class="font-bold text-primary text-headline-md mb-1">公益認定 事前診断</h4>
+                                    <p class="font-label-md text-label-md text-prestige-gold">書類確認のうえ助言</p>
                                 </div>
-                                <span class="text-lg font-bold text-slate-900 whitespace-nowrap">66,000円〜<span class="text-base font-normal text-slate-600 ml-1">（税込）</span></span>
+                                <span class="text-headline-md font-bold text-primary whitespace-nowrap">66,000円〜<span class="text-label-md font-normal text-on-surface-variant ml-1">（税込）</span></span>
                             </div>
-                            <p class="text-lg text-slate-800 leading-loose">
+                            <p class="font-body-md text-on-surface-variant leading-loose">
                                 約60分・オンライン。定款・事業計画・収支予算等の書類をお預かりし、事前に確認した上でご相談に臨みます。現時点での課題と、申請に向けて必要な準備をより具体的にお伝えします。
                             </p>
                         </div>
@@ -429,34 +506,34 @@
                 <!-- ステップ3 -->
                 <div>
                     <div class="flex items-start gap-6 mb-8">
-                        <div class="flex-shrink-0 w-10 h-10 bg-slate-900 text-white rounded-full flex items-center justify-center text-lg font-en font-bold">3</div>
-                        <div class="flex-1 bg-slate-50 border border-slate-100 p-8 rounded-sm">
-                            <div class="mb-6">
-                                <h4 class="font-bold text-slate-900 text-lg mb-1">公益認定申請サポート</h4>
-                                <p class="text-base text-slate-600">申請書類の設計から認定まで</p>
+                        <div class="flex-shrink-0 w-12 h-12 bg-primary-container text-white rounded-full flex items-center justify-center font-headline-md font-bold shadow-md">3</div>
+                        <div class="flex-1 glass-panel border border-outline-variant/20 p-8 rounded-lg border-t-4 border-t-prestige-gold">
+                            <div class="mb-6 border-b border-outline-variant/20 pb-4">
+                                <h4 class="font-bold text-primary text-headline-md mb-1">公益認定申請サポート</h4>
+                                <p class="font-label-md text-label-md text-prestige-gold">申請書類の設計から認定まで</p>
                             </div>
 
-                            <div class="space-y-5 text-lg mb-6">
-                                <div class="flex flex-col md:flex-row md:justify-between border-b border-slate-100 pb-4">
-                                    <span class="font-medium text-slate-800">月額制</span>
-                                    <span class="text-slate-800 mt-1 md:mt-0">121,000円〜 / 月</span>
+                            <div class="space-y-4 text-body-md mb-6">
+                                <div class="flex flex-col md:flex-row md:justify-between bg-surface p-4 rounded-md">
+                                    <span class="font-bold text-primary">月額制</span>
+                                    <span class="text-primary font-medium mt-1 md:mt-0">121,000円〜 / 月</span>
                                 </div>
-                                <div class="flex flex-col md:flex-row md:justify-between border-b border-slate-100 pb-4">
-                                    <span class="font-medium text-slate-800">一括制</span>
-                                    <span class="text-slate-800 mt-1 md:mt-0">1,430,000円〜</span>
+                                <div class="flex flex-col md:flex-row md:justify-between bg-surface p-4 rounded-md">
+                                    <span class="font-bold text-primary">一括制</span>
+                                    <span class="text-primary font-medium mt-1 md:mt-0">1,430,000円〜</span>
                                 </div>
                             </div>
 
-                            <p class="text-lg text-slate-800 leading-loose mb-4">
+                            <p class="font-body-md text-on-surface-variant leading-loose mb-4">
                                 お客様の関与度（書類をご自身で作成されるか、当研究所が作成を担当するか）に応じて、業務範囲と報酬を個別にお見積りします。<br>
-                                詳細な料金・条件等については、<a href="fees.html" class="text-slate-900 border-b border-slate-900 hover:text-slate-700 hover:border-slate-500 transition-colors">報酬額表</a> をご確認ください。
+                                詳細な料金・条件等については、<a href="fees.html" class="text-primary font-bold border-b-2 border-primary hover:text-prestige-gold hover:border-prestige-gold transition-colors">報酬額表</a> をご確認ください。
                             </p>
 
-                            <hr class="border-slate-100 my-5">
+                            <hr class="border-outline-variant/20 my-6">
 
-                            <div class="flex flex-col md:flex-row md:justify-between text-lg">
-                                <span class="font-medium text-slate-800">変更認定サポート<span class="text-base text-slate-600 ml-2">公益目的事業の変更・追加等</span></span>
-                                <span class="text-slate-800 mt-1 md:mt-0">550,000円〜</span>
+                            <div class="flex flex-col md:flex-row md:justify-between font-body-md">
+                                <span class="font-bold text-primary">変更認定サポート<span class="text-label-md text-on-surface-variant ml-2 font-normal">公益目的事業の変更・追加等</span></span>
+                                <span class="text-primary font-bold mt-1 md:mt-0">550,000円〜</span>
                             </div>
                         </div>
                     </div>
@@ -464,173 +541,153 @@
             </div>
 
             <!-- 充当注記 -->
-            <div class="ml-16 p-6 bg-white border border-slate-200 rounded-sm mb-8">
-                <p class="text-base text-slate-700 leading-relaxed">
-                    ※ 初回ご相談から<strong class="text-slate-700">1か月以内</strong>に申請代理をご依頼いただいた場合、初回分の相談料を本契約の報酬額から充当いたします（2回目以降の相談料、および1か月を経過した場合は対象外）。
+            <div class="md:ml-18 p-6 bg-surface-container-low border-l-4 border-prestige-gold rounded-r-lg mb-8 shadow-sm">
+                <p class="font-body-md text-on-surface-variant leading-relaxed">
+                    <span class="material-symbols-outlined text-prestige-gold align-middle mr-1">info</span>
+                    初回ご相談から<strong class="text-primary font-bold">1か月以内</strong>に申請代理をご依頼いただいた場合、初回分の相談料を本契約の報酬額から充当いたします（2回目以降の相談料、および1か月を経過した場合は対象外）。
                 </p>
             </div>
 
             <!-- 料金ページ導線 -->
-            <div class="ml-16">
-                <a href="fees.html" class="text-slate-900 border-b border-slate-900 hover:text-slate-700 hover:border-slate-500 transition-colors text-lg">
-                    → 報酬額表（一般法務・出張費等を含む全料金）はこちら
+            <div class="md:ml-18 text-center md:text-left mt-8">
+                <a href="fees.html" class="inline-flex items-center text-primary font-bold hover:text-prestige-gold transition-colors text-body-lg group">
+                    <span class="border-b-2 border-primary group-hover:border-prestige-gold transition-colors pb-1">報酬額表（一般法務・出張費等を含む全料金）はこちら</span>
+                    <span class="material-symbols-outlined ml-2 transform group-hover:translate-x-1 transition-transform">arrow_forward</span>
                 </a>
             </div>
         </div>
     </section>
 
-
     <!-- =========================================
          6. 代表プロフィール
          ========================================= -->
-    <section id="profile" class="bg-slate-50 px-6 py-32 border-b border-slate-100">
-        <div class="max-w-4xl mx-auto">
-            <div class="mb-16">
-                <span class="text-base font-medium tracking-widest text-slate-600">代表プロフィール</span>
+    <section id="profile" class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mb-section-gap">
+        <div class="text-center mb-16">
+            <p class="font-label-md text-label-md text-prestige-gold tracking-widest mb-4">代表プロフィール</p>
+        </div>
+
+        <div class="flex flex-col md:flex-row gap-12 items-start max-w-4xl mx-auto">
+            <!-- 画像枠 -->
+            <div class="w-full md:w-1/3 shrink-0">
+                <div class="aspect-[3/4] w-full rounded-lg relative overflow-hidden ambient-shadow border border-outline-variant/20">
+                    <img src="assets/images/profile-photo.jpg" alt="渥美 洋行" class="object-cover w-full h-full">
+                </div>
             </div>
 
-            <div class="flex flex-col md:flex-row gap-12 items-start">
-                <!-- 画像枠 -->
-                <div class="w-full md:w-1/3 shrink-0">
-                    <div class="aspect-[3/4] w-full bg-slate-200 rounded-sm relative overflow-hidden shadow-sm">
-                        <img src="images/profile_dummy.png" alt="渥美 洋行" class="object-cover w-full h-full grayscale-[10%]">
-                    </div>
-                    <p class="text-sm text-slate-500 mt-3 text-center">※プロの顔写真へ差し替え推奨</p>
-                </div>
+            <!-- テキスト枠 -->
+            <div class="w-full md:w-2/3">
+                <h3 class="font-headline-lg text-headline-lg text-primary mb-2">渥美 洋行</h3>
+                <p class="text-body-lg text-on-surface-variant mb-2 tracking-wider">Hiroyuki Atsumi</p>
+                <p class="font-label-md text-label-md text-prestige-gold mb-8">行政書士（登録番号 第26082315号）</p>
 
-                <!-- テキスト枠 -->
-                <div class="w-full md:w-2/3">
-                    <h3 class="font-serif-jp text-3xl text-slate-900 mb-2">渥美 洋行</h3>
-                    <p class="text-lg text-slate-700 mb-2 font-en tracking-wider">Hiroyuki Atsumi</p>
-                    <p class="text-base text-slate-600 mb-10">行政書士（登録番号 第26082315号）</p>
+                <div class="space-y-6 font-body-md text-on-surface-variant leading-loose">
+                    <p>
+                        中央省庁にて24年間、5省庁にわたり行政実務に従事。<br>
+                        内閣府 公益認定等委員会事務局では<strong class="text-primary font-bold">審査監督調査官</strong>を務め、国際的な大規模法人の認定や企業系財団の新規・変更認定を担当。<br>
+                        <strong class="text-primary font-bold">「数字が読め、経営がわかる行政書士」</strong>として、公益認定法上の判断基準はもちろん、厳格な財務基準のクリアや法人運営の実務、補正対応の勘所を熟知しています。
+                    </p>
 
-                    <div class="space-y-6 text-slate-800 leading-loose text-lg">
-                        <p>
-                            中央省庁にて24年間、5省庁にわたり行政実務に従事。<br>
-                            内閣府 公益認定等委員会事務局では<strong class="text-slate-900">審査監督調査官</strong>を務め、国際的な大規模法人の認定や企業系財団の新規・変更認定を担当。<br>
-                            <strong class="text-slate-900">「数字が読め、経営がわかる行政書士」</strong>として、公益認定法上の判断基準はもちろん、厳格な財務基準のクリアや法人運営の実務、補正対応の勘所を熟知しています。
-                        </p>
+                    <p>
+                        退官後、ベンチャー企業で広報・AI関連プロジェクト責任者を経て、<a href="https://www.aawave.co.jp/" target="_blank" rel="noopener noreferrer" class="text-primary font-bold border-b border-primary hover:text-prestige-gold hover:border-prestige-gold transition-colors">AA WAVE合同会社</a>を設立。官公庁の論理と民間の実務、その両方を理解する立場から、行政書士として公益認定の申請支援に取り組んでいます。
+                    </p>
 
-                        <p>
-                            退官後、ベンチャー企業で広報・AI関連プロジェクト責任者を経て、<a href="https://www.aawave.co.jp/" target="_blank" rel="noopener noreferrer" class="text-slate-900 border-b border-slate-900 hover:text-slate-700 hover:border-slate-500 transition-colors">AA WAVE合同会社</a>を設立。官公庁の論理と民間の実務、その両方を理解する立場から、行政書士として公益認定の申請支援に取り組んでいます。
-                        </p>
-
-                        <p class="text-base text-slate-600 mt-8 pt-8 border-t border-slate-200">
-                            行政書士 渥美洋行 政策法務研究所 代表 ／ AA WAVE合同会社 代表社員 ／ 東京都行政書士会所属
-                        </p>
-                    </div>
+                    <p class="font-label-md text-label-md text-on-surface-variant/80 mt-8 pt-8 border-t border-outline-variant/20">
+                        行政書士 渥美洋行 政策法務研究所 代表 ／ AA WAVE合同会社 代表社員 ／ 東京都行政書士会所属
+                    </p>
                 </div>
             </div>
         </div>
     </section>
 
-
     <!-- =========================================
          7. FAQ
          ========================================= -->
-    <section id="faq" class="px-6 py-32 border-b border-slate-100">
-        <div class="max-w-4xl mx-auto">
-            <div class="mb-16">
-                <span class="text-base font-medium tracking-widest text-slate-600">よくあるご質問</span>
+    <section id="faq" class="bg-surface-ivory py-section-gap border-y border-outline-variant/20 mb-section-gap">
+        <div class="max-w-4xl mx-auto px-margin-mobile md:px-margin-desktop">
+            <div class="text-center mb-16">
+                <p class="font-label-md text-label-md text-prestige-gold tracking-widest mb-4">よくあるご質問</p>
+                <h2 class="font-headline-lg text-headline-lg font-bold text-primary mb-12 leading-relaxed">
+                    公益認定の申請に関するご質問
+                </h2>
             </div>
 
-            <h2 class="font-serif-jp text-2xl md:text-3xl text-slate-900 mb-12 leading-relaxed">
-                公益認定の申請に関するご質問
-            </h2>
-
-            <div class="space-y-12">
-                <div class="flex flex-col md:flex-row gap-6 md:gap-16">
-                    <div class="w-full md:w-1/2">
-                        <h4 class="font-serif-jp text-lg text-slate-900 leading-relaxed">
-                            <span class="text-slate-600 font-en mr-2 text-lg">Q.</span>
-                            現在の体制（事業内容等）で、公益認定を受けることは可能でしょうか？
-                        </h4>
-                    </div>
-                    <div class="w-full md:w-1/2 text-slate-800 text-lg leading-loose">
+            <div class="space-y-8">
+                <!-- FAQ 1 -->
+                <div class="glass-panel p-8 rounded-lg border border-outline-variant/30">
+                    <h4 class="text-body-lg font-headline-md text-primary-container mb-4 flex items-start leading-relaxed">
+                        <span class="text-prestige-gold font-en mr-3 text-xl font-bold">Q.</span>
+                        現在の体制（事業内容等）で、公益認定を受けることは可能でしょうか？
+                    </h4>
+                    <div class="text-body-md text-on-surface-variant leading-relaxed pl-8 border-l-2 border-surface-container-high">
                         <p>
                             公益目的事業を行う意思と実態があれば、規模の大小を問わず申請は可能です。ただし収支相償や公益目的事業比率などの財務基準を満たす設計が必要です。まずは初回のご相談（30分・無料）や、審査側視点でのスポット相談（33,000円・約60分）にて、現状の論点を整理されることをお勧めします。
                         </p>
                     </div>
                 </div>
 
-                <hr class="border-slate-100">
-
-                <div class="flex flex-col md:flex-row gap-6 md:gap-16">
-                    <div class="w-full md:w-1/2">
-                        <h4 class="font-serif-jp text-lg text-slate-900 leading-relaxed">
-                            <span class="text-slate-600 font-en mr-2 text-lg">Q.</span>
-                            「社会に良い事業」をしていれば、公益認定は受けられますか？
-                        </h4>
-                    </div>
-                    <div class="w-full md:w-1/2 text-slate-800 text-lg leading-loose">
+                <!-- FAQ 2 -->
+                <div class="glass-panel p-8 rounded-lg border border-outline-variant/30">
+                    <h4 class="text-body-lg font-headline-md text-primary-container mb-4 flex items-start leading-relaxed">
+                        <span class="text-prestige-gold font-en mr-3 text-xl font-bold">Q.</span>
+                        「社会に良い事業」をしていれば、公益認定は受けられますか？
+                    </h4>
+                    <div class="text-body-md text-on-surface-variant leading-relaxed pl-8 border-l-2 border-surface-container-high">
                         <p>
                             単に「世の中のためになる事業」を行っているだけでは、公益と認められるとは限りません。行政庁の審査では、事業自体の公益性に加えて、「その事業を『その法人』が実施することが適切か（事業遂行能力やガバナンス等の適格性）」を含めて総合的に判断されます。そのため、事業の意義だけでなく、法人組織としての妥当性を示す論理構築が不可欠です。
                         </p>
                     </div>
                 </div>
 
-                <hr class="border-slate-100">
-
-                <div class="flex flex-col md:flex-row gap-6 md:gap-16">
-                    <div class="w-full md:w-1/2">
-                        <h4 class="font-serif-jp text-lg text-slate-900 leading-relaxed">
-                            <span class="text-slate-600 font-en mr-2 text-lg">Q.</span>
-                            申請にはどれくらいの期間がかかりますか？
-                        </h4>
-                    </div>
-                    <div class="w-full md:w-1/2 text-slate-800 text-lg leading-loose">
+                <!-- FAQ 3 -->
+                <div class="glass-panel p-8 rounded-lg border border-outline-variant/30">
+                    <h4 class="text-body-lg font-headline-md text-primary-container mb-4 flex items-start leading-relaxed">
+                        <span class="text-prestige-gold font-en mr-3 text-xl font-bold">Q.</span>
+                        申請にはどれくらいの期間がかかりますか？
+                    </h4>
+                    <div class="text-body-md text-on-surface-variant leading-relaxed pl-8 border-l-2 border-surface-container-high">
                         <p>
                             法人の規模・事業数にもよりますが、申請書類の準備に3〜6か月、行政庁の審査に3〜6か月が一般的な目安です。月額制の場合は、着手月から認定日の前日が属する月までを対象期間としており、早期に認定へ至るほど総額を抑えられます。
                         </p>
                     </div>
                 </div>
 
-                <hr class="border-slate-100">
-
-                <div class="flex flex-col md:flex-row gap-6 md:gap-16">
-                    <div class="w-full md:w-1/2">
-                        <h4 class="font-serif-jp text-lg text-slate-900 leading-relaxed">
-                            <span class="text-slate-600 font-en mr-2 text-lg">Q.</span>
-                            月額制の場合、お支払いはいつまで続きますか？
-                        </h4>
-                    </div>
-                    <div class="w-full md:w-1/2 text-slate-800 text-lg leading-loose">
+                <!-- FAQ 4 -->
+                <div class="glass-panel p-8 rounded-lg border border-outline-variant/30">
+                    <h4 class="text-body-lg font-headline-md text-primary-container mb-4 flex items-start leading-relaxed">
+                        <span class="text-prestige-gold font-en mr-3 text-xl font-bold">Q.</span>
+                        月額制の場合、お支払いはいつまで続きますか？
+                    </h4>
+                    <div class="text-body-md text-on-surface-variant leading-relaxed pl-8 border-l-2 border-surface-container-high">
                         <p>
                             業務着手月から、公益認定の日（認定書の日付）の前日が属する月までです。認定をもって終了となります。上限月数の設定はありませんが、目安として6〜12か月をご参考ください。
                         </p>
                     </div>
                 </div>
 
-                <hr class="border-slate-100">
-
-                <div class="flex flex-col md:flex-row gap-6 md:gap-16">
-                    <div class="w-full md:w-1/2">
-                        <h4 class="font-serif-jp text-lg text-slate-900 leading-relaxed">
-                            <span class="text-slate-600 font-en mr-2 text-lg">Q.</span>
-                            認定後の運営や外部理事・監事は、誰に頼めばよいですか？
-                        </h4>
-                    </div>
-                    <div class="w-full md:w-1/2 text-slate-800 text-lg leading-loose">
+                <!-- FAQ 5 -->
+                <div class="glass-panel p-8 rounded-lg border border-outline-variant/30">
+                    <h4 class="text-body-lg font-headline-md text-primary-container mb-4 flex items-start leading-relaxed">
+                        <span class="text-prestige-gold font-en mr-3 text-xl font-bold">Q.</span>
+                        認定後の運営や外部理事・監事は、誰に頼めばよいですか？
+                    </h4>
+                    <div class="text-body-md text-on-surface-variant leading-relaxed pl-8 border-l-2 border-surface-container-high">
                         <p>
-                            認定後の定期提出書類の作成、変更認定申請、理事会運営などの<strong class="text-slate-900">法人運営支援</strong>は、引き続き当研究所（行政書士）にて承ることが可能です。<br>
-                            ただし、法人の<strong class="text-slate-900">外部理事・監事</strong>への就任については、法令上、代表の渥美が「個人として」お引き受けする形となります（関連会社を含め、法人としての受任はできません）。<br>
-                            <a href="https://www.aawave.co.jp/personal/" target="_blank" rel="noopener noreferrer" class="text-slate-900 border-b border-slate-900 hover:text-slate-700 hover:border-slate-500 transition-colors">→ 外部役員就任に関するご案内（個人のページ）</a>
+                            認定後の定期提出書類の作成、変更認定申請、理事会運営などの<strong class="text-primary font-bold">法人運営支援</strong>は、引き続き当研究所（行政書士）にて承ることが可能です。<br>
+                            ただし、法人の<strong class="text-primary font-bold">外部理事・監事</strong>への就任については、法令上、代表の渥美が「個人として」お引き受けする形となります（関連会社を含め、法人としての受任はできません）。<br>
+                            <a href="https://www.aawave.co.jp/personal/" target="_blank" rel="noopener noreferrer" class="text-primary font-bold border-b border-primary hover:text-prestige-gold hover:border-prestige-gold transition-colors mt-2 inline-block">→ 外部役員就任に関するご案内（個人のページ）</a>
                         </p>
                     </div>
                 </div>
-
-                <hr class="border-slate-100">
-
-                <div class="flex flex-col md:flex-row gap-6 md:gap-16">
-                    <div class="w-full md:w-1/2">
-                        <h4 class="font-serif-jp text-lg text-slate-900 leading-relaxed">
-                            <span class="text-slate-600 font-en mr-2 text-lg">Q.</span>
-                            地方の法人でも対応できますか？
-                        </h4>
-                    </div>
-                    <div class="w-full md:w-1/2 text-slate-800 text-lg leading-loose">
+                
+                <!-- FAQ 6 -->
+                <div class="glass-panel p-8 rounded-lg border border-outline-variant/30">
+                    <h4 class="text-body-lg font-headline-md text-primary-container mb-4 flex items-start leading-relaxed">
+                        <span class="text-prestige-gold font-en mr-3 text-xl font-bold">Q.</span>
+                        地方の法人でも対応できますか？
+                    </h4>
+                    <div class="text-body-md text-on-surface-variant leading-relaxed pl-8 border-l-2 border-surface-container-high">
                         <p>
-                            はい。スポット相談・事前診断はオンラインで実施します。申請サポートにおいても、オンラインを中心に全国対応が可能です。行政庁との事前相談への同席等で出張が必要な場合は、原則として<a href="fees.html#notes" class="text-slate-900 border-b border-slate-900 hover:text-slate-700 hover:border-slate-500 transition-colors">地域別の出張費</a>を申し受けます。<br>
+                            はい。スポット相談・事前診断はオンラインで実施します。申請サポートにおいても、オンラインを中心に全国対応が可能です。行政庁との事前相談への同席等で出張が必要な場合は、原則として<a href="fees.html#notes" class="text-primary border-b border-primary hover:text-prestige-gold hover:border-prestige-gold transition-colors">地域別の出張費</a>を申し受けます。<br>
                             ただし、代表の渥美は全国の地方自治体向け支援も行っておりますため、他業務との出張タイミングが合えば、交通費等のご負担を軽減できる場合もございます。遠方の法人様もまずはお気軽にご相談ください。
                         </p>
                     </div>
@@ -639,21 +696,23 @@
         </div>
     </section>
 
-
     <!-- =========================================
          8. クロージングCTA
          ========================================= -->
-    <section id="contact" class="bg-slate-50 px-6 py-32 border-t border-slate-100">
-        <div class="max-w-2xl mx-auto text-center">
+    <section id="contact" class="bg-surface-slate py-section-gap relative overflow-hidden border-b border-outline-variant/20">
+        <div class="absolute inset-0 z-0">
+            <div class="absolute right-0 top-0 w-1/2 h-full bg-gradient-to-l from-surface-container-high/30 to-transparent"></div>
+        </div>
+        <div class="max-w-2xl mx-auto text-center relative z-10 px-margin-mobile">
             <div class="mb-8">
-                <span class="text-base font-medium tracking-widest text-slate-600">ご相談・お問い合わせ</span>
+                <span class="font-label-md text-label-md text-prestige-gold tracking-widest uppercase block mb-4">ご相談・お問い合わせ</span>
             </div>
 
-            <h2 class="font-serif-jp text-2xl md:text-3xl text-slate-900 mb-8 leading-relaxed">
+            <h2 class="font-headline-lg text-headline-lg font-bold text-primary mb-8 leading-relaxed">
                 まずは、論点の整理から。
             </h2>
 
-            <p class="text-slate-800 text-lg leading-loose mb-12">
+            <p class="font-body-md text-on-surface-variant leading-loose mb-12">
                 「公益認定を考えているが、何から始めればよいかわからない」——<br>
                 そういう段階でお声がけいただくのが、もっとも効果的です。<br>
                 初回30分の無料個別相談にて、現状の課題をうかがった上で<br>
@@ -661,86 +720,54 @@
             </p>
 
             <div class="flex flex-col sm:flex-row justify-center gap-4 mb-6">
-                <!-- ※Jicoo等のURLが決まり次第、hrefを差し替えてonclickを削除 -->
-                <a href="index.html#contact" class="inline-block bg-slate-900 text-white text-lg tracking-widest px-10 py-4 hover:bg-slate-700 transition-colors text-center">
+                <a href="index.html#contact" class="inline-flex items-center justify-center bg-prestige-gold text-white px-10 py-4 rounded hover:bg-secondary transition-colors font-label-md text-label-md ambient-shadow group">
                     初回 個別相談（30分・無料）を申し込む
+                    <span class="material-symbols-outlined ml-2 transform group-hover:translate-x-1 transition-transform">arrow_forward</span>
                 </a>
             </div>
-            <!-- 削除: LINE相談へのリンク -->
 
-            <p class="text-sm text-slate-600 mt-10 leading-relaxed">
+            <p class="font-label-md text-label-md text-on-surface-variant/80 mt-10 leading-relaxed">
                 ※ 本ページの内容は、公益認定の可否を保証するものではありません。<br>
                 ※ 掲載の金額はすべて税込です。
             </p>
         </div>
     </section>
 
-
     <!-- =========================================
          関連情報・回遊導線
          ========================================= -->
-    <section class="px-6 py-32 border-t border-slate-100">
-        <div class="max-w-4xl mx-auto">
-            <div class="mb-16">
-                <span class="text-base font-medium tracking-widest text-slate-600">関連情報</span>
-            </div>
+    <section class="py-section-gap max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mb-12">
+        <div class="text-center mb-16">
+            <span class="font-label-md text-label-md text-prestige-gold tracking-widest uppercase block mb-4">関連情報</span>
+        </div>
 
-            <div class="grid md:grid-cols-2 gap-8">
-                <a href="#" class="block bg-slate-50 border border-slate-100 p-8 hover:bg-slate-100 transition-colors group">
-                    <p class="text-sm font-medium tracking-widest text-slate-600 mb-3">NOTE</p>
-                    <p class="text-lg font-medium text-slate-900 mb-2 group-hover:text-slate-800 transition-colors">審査する側から見た、「不適切な説明」となっている申請書の共通点</p>
-                    <p class="text-base text-slate-600">※ note記事公開後にURLを差し替え</p>
-                </a>
-                <a href="#" class="block bg-slate-50 border border-slate-100 p-8 hover:bg-slate-100 transition-colors group">
-                    <p class="text-sm font-medium tracking-widest text-slate-600 mb-3">NOTE</p>
-                    <p class="text-lg font-medium text-slate-900 mb-2 group-hover:text-slate-800 transition-colors">2025年 新公益法人制度——申請を検討する法人が知っておくべきこと</p>
-                    <p class="text-base text-slate-600">※ note記事公開後にURLを差し替え</p>
-                </a>
-                <a href="fees.html" class="block bg-slate-50 border border-slate-100 p-8 hover:bg-slate-100 transition-colors group">
-                    <p class="text-sm font-medium tracking-widest text-slate-600 mb-3">報酬額表</p>
-                    <p class="text-lg font-medium text-slate-900 mb-2 group-hover:text-slate-800 transition-colors">全業務の報酬額・出張費・重要事項</p>
-                    <p class="text-base text-slate-600">一般法務を含む全料金はこちら</p>
-                </a>
-                <a href="https://www.aawave.co.jp/governance/" target="_blank" rel="noopener noreferrer" class="block bg-slate-50 border border-slate-100 p-8 hover:bg-slate-100 transition-colors group">
-                    <p class="text-sm font-medium tracking-widest text-slate-600 mb-3">AA WAVE 合同会社</p>
-                    <p class="text-lg font-medium text-slate-900 mb-2 group-hover:text-slate-800 transition-colors">認定取得後の組織運営支援・ガバナンス顧問</p>
-                    <p class="text-base text-slate-600">認定後のことはAA WAVE / 個人へ</p>
-                </a>
-            </div>
+        <div class="grid md:grid-cols-2 gap-8">
+            <a href="https://note.com/legal_and_policy" target="_blank" rel="noopener noreferrer" class="block glass-panel border border-outline-variant/20 p-8 rounded-lg hover:border-prestige-gold/50 hover:shadow-lg transition-all group">
+                <p class="font-label-sm text-label-sm text-prestige-gold tracking-widest mb-3 flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4 mr-2"><path fill-rule="evenodd" clip-rule="evenodd" d="M4.8 0h14.4C21.8 0 24 2.2 24 4.8v14.4c0 2.6-2.2 4.8-4.8 4.8H4.8C2.2 24 0 21.8 0 19.2V4.8C0 2.2 2.2 0 4.8 0zM6 18V6h3C12 4 16 5 18 11v7h-3v-7C13.5 9 10.5 9 9 11v7z"/></svg>
+                    note
+                </p>
+                <p class="font-headline-md text-body-lg text-primary mb-2 group-hover:text-prestige-gold transition-colors font-bold">公式note</p>
+                <p class="font-body-md text-on-surface-variant">行政実務の最前線や審査側の視点など、実践的な知見をnoteで発信しています。</p>
+            </a>
+            
+            <a href="fees.html" class="block glass-panel border border-outline-variant/20 p-8 rounded-lg hover:border-prestige-gold/50 hover:shadow-lg transition-all group">
+                <p class="font-label-sm text-label-sm text-prestige-gold tracking-widest mb-3 flex items-center">
+                    <span class="material-symbols-outlined text-[16px] mr-2">request_quote</span>
+                    報酬額表
+                </p>
+                <p class="font-headline-md text-body-lg text-primary mb-2 group-hover:text-prestige-gold transition-colors font-bold">全業務の報酬額・重要事項</p>
+                <p class="font-body-md text-on-surface-variant">一般法務を含む全料金や、出張費・お支払い条件等についてはこちらをご確認ください。</p>
+            </a>
+            
+            <a href="https://www.aawave.co.jp/governance/" target="_blank" rel="noopener noreferrer" class="block glass-panel border border-outline-variant/20 p-8 rounded-lg hover:border-prestige-gold/50 hover:shadow-lg transition-all group md:col-span-2">
+                <p class="font-label-sm text-label-sm text-prestige-gold tracking-widest mb-3 flex items-center">
+                    <span class="material-symbols-outlined text-[16px] mr-2">corporate_fare</span>
+                    AA WAVE 合同会社 / 外部役員就任
+                </p>
+                <p class="font-headline-md text-body-lg text-primary mb-2 group-hover:text-prestige-gold transition-colors font-bold">認定取得後の組織運営支援・ガバナンス顧問</p>
+                <p class="font-body-md text-on-surface-variant">認定後の法人運営実務や、外部理事・監事の就任（個人受任）については、AA WAVE合同会社または個人のご案内ページをご覧ください。</p>
+            </a>
         </div>
     </section>
-
-
-    <!-- フッター -->
-    <footer class="bg-slate-50 py-16 px-6 border-t border-slate-100">
-        <div class="max-w-5xl mx-auto flex flex-col md:flex-row justify-between items-start text-lg">
-            <div class="mb-8 md:mb-0">
-                <h2 class="text-slate-900 font-medium text-lg mb-1">行政書士 渥美洋行 政策法務研究所</h2>
-                <p class="text-base text-slate-700 mb-4">行政書士 渥美洋行（登録番号 第26082315号）<br>（2026年6月15日登録／東京都行政書士会所属）</p>
-                <div class="text-slate-700 leading-loose">
-                    <p>〒102-0071<br>東京都千代田区富士見1-5-4 3階</p>
-                    <p class="mt-2 text-base">
-                        JR総武線「飯田橋駅」西口 徒歩5分<br>
-                        東京メトロ東西線等「飯田橋駅」徒歩5分
-                    </p>
-                </div>
-            </div>
-            <div class="flex flex-col space-y-3 text-right">
-                <a href="index.html" class="text-slate-700 hover:text-slate-900 transition-colors">トップページ</a>
-                <a href="fees.html" class="text-slate-700 hover:text-slate-900 transition-colors">報酬額表</a>
-                <!-- SNS・外部リンク -->
-                <a href="privacy.html" class="text-slate-700 hover:text-slate-900 transition-colors">プライバシーポリシー</a>
-                <a href="https://note.com/legal_and_policy" target="_blank" rel="noopener noreferrer" class="text-slate-700 hover:text-slate-900 transition-colors">note</a>
-                <a href="https://x.com/HAtsumi621" target="_blank" rel="noopener noreferrer" class="text-slate-700 hover:text-slate-900 transition-colors">X (Twitter)</a>
-                <a href="https://www.aawave.co.jp/governance/" target="_blank" rel="noopener noreferrer" class="text-slate-700 hover:text-slate-900 transition-colors">認定後の運営支援</a>
-            </div>
-        </div>
-        <div class="max-w-5xl mx-auto mt-12 pt-8 border-t border-slate-200">
-            <p class="text-center text-sm text-slate-600 font-en tracking-wider">
-                &copy; 2026 Atsumi Hiroyuki Policy Law Institute.
-            </p>
-        </div>
-    </footer>
-
-</body>
-</html>
+</main>
