@@ -226,26 +226,28 @@
 </head>
 <body class="bg-surface-slate text-on-surface font-body-md antialiased min-h-screen flex flex-col">
 <!-- TopNavBar -->
-<nav class="bg-surface-ivory dark:bg-surface-container-lowest fixed top-0 w-full z-50 border-b border-outline-variant/20 dark:border-outline/10 bg-surface-ivory/95 backdrop-blur-sm transition-all duration-300">
-<div class="flex justify-between items-center h-20 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
-<a class="font-headline-md text-headline-md font-bold text-primary dark:text-primary-fixed tracking-tight opacity-100 hover:opacity-80 transition-opacity duration-200" href="index.html">行政書士 渥美洋行 政策法務研究所</a>
-<div class="hidden md:flex space-x-8 items-center">
-<a class="font-label-md text-label-md text-on-surface-variant dark:text-on-primary-container hover:text-prestige-gold transition-colors duration-300" href="index.html">ホーム</a>
-<a class="font-label-md text-label-md text-prestige-gold font-bold border-b-2 border-prestige-gold pb-1 hover:text-prestige-gold dark:hover:text-prestige-gold transition-all duration-300" href="koueki.html">公益法人支援</a>
-<a class="font-label-md text-label-md text-on-surface-variant dark:text-on-primary-container hover:text-prestige-gold transition-colors duration-300" href="fees.html">報酬額表</a>
-<a class="font-label-md text-label-md text-on-surface-variant dark:text-on-primary-container hover:text-prestige-gold transition-colors duration-300" href="https://note.com/legal_and_policy" target="_blank" rel="noopener noreferrer">
-    note
-</a>
-<a class="bg-primary-container text-white px-6 py-3 rounded hover:bg-primary transition-colors font-label-md text-label-md ambient-shadow flex items-center space-x-2 ml-4" href="index.html#contact">
-<span class="">初回無料相談を予約</span>
-<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
-</a>
-</div>
-<button class="md:hidden text-primary">
-<span class="material-symbols-outlined text-[28px]">menu</span>
-</button>
-</div>
-</nav>
+<header class="bg-surface-ivory/95 dark:bg-surface-container-lowest/95 backdrop-blur-sm fixed top-0 w-full z-50 border-b border-outline-variant/20 dark:border-outline/10 transition-all duration-300">
+    <div class="flex justify-between items-center h-20 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto w-full">
+        <a class="font-headline-md text-headline-md font-bold text-primary dark:text-primary-fixed tracking-tight hover:opacity-80 transition-opacity duration-200" href="index.html">
+            行政書士 渥美洋行 政策法務研究所
+        </a>
+        <nav class="hidden md:flex space-x-8 items-center">
+            <a class="font-label-md text-label-md text-on-surface-variant hover:text-prestige-gold transition-colors duration-300" href="index.html">ホーム</a>
+            <a class="font-label-md text-label-md text-on-surface-variant hover:text-prestige-gold transition-colors duration-300" href="koueki.html">公益法人支援</a>
+            <a class="font-label-md text-label-md text-on-surface-variant hover:text-prestige-gold transition-colors duration-300" href="fees.html">報酬額表</a>
+            <a class="font-label-md text-label-md text-on-surface-variant hover:text-prestige-gold transition-colors duration-300 flex items-center" href="https://note.com/legal_and_policy" target="_blank" rel="noopener noreferrer">
+                note
+            </a>
+            <a class="bg-prestige-gold text-white px-6 py-3 rounded text-label-md font-label-md hover:opacity-90 transition-opacity flex items-center space-x-2 ml-4 ambient-shadow" href="index.html#contact">
+                <span>初回無料相談を予約</span>
+                <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+            </a>
+        </nav>
+        <button class="md:hidden text-primary">
+            <span class="material-symbols-outlined text-[28px]">menu</span>
+        </button>
+    </div>
+</header>
 <main class="flex-grow pt-24 md:pt-32">
 <!-- Hero Section -->
 <section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mb-section-gap">
