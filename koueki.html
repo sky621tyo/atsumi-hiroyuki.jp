@@ -13,104 +13,9 @@
 <meta property="og:site_name" content="行政書士 渥美洋行 政策法務研究所">
 <meta name="twitter:card" content="summary_large_image">
 
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600&family=Noto+Serif+JP:wght@600;700&display=swap" rel="stylesheet">
-<script id="tailwind-config">
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    "colors": {
-                        "surface-dim": "#cbdbf5",
-                        "on-error-container": "#93000a",
-                        "tertiary-fixed-dim": "#bcc7de",
-                        "surface-container-lowest": "#ffffff",
-                        "surface-bright": "#f8f9ff",
-                        "on-tertiary": "#ffffff",
-                        "outline-variant": "#c6c6cd",
-                        "on-secondary-fixed": "#271900",
-                        "on-primary-fixed": "#131b2e",
-                        "primary-fixed-dim": "#bec6e0",
-                        "error-container": "#ffdad6",
-                        "surface-container-highest": "#d3e4fe",
-                        "surface-tint": "#565e74",
-                        "on-secondary": "#ffffff",
-                        "on-primary-fixed-variant": "#3f465c",
-                        "tertiary-fixed": "#d8e3fb",
-                        "on-surface-variant": "#45464d",
-                        "inverse-primary": "#bec6e0",
-                        "surface-slate": "#F8FAFC",
-                        "on-surface": "#0b1c30",
-                        "prestige-gold": "#C5A059",
-                        "surface": "#f8f9ff",
-                        "on-background": "#0b1c30",
-                        "surface-container": "#e5eeff",
-                        "inverse-on-surface": "#eaf1ff",
-                        "background": "#f8f9ff",
-                        "on-tertiary-fixed-variant": "#3c475a",
-                        "surface-container-low": "#eff4ff",
-                        "on-primary": "#ffffff",
-                        "tertiary": "#000000",
-                        "on-secondary-container": "#785f34",
-                        "tertiary-container": "#111c2d",
-                        "secondary": "#735a30",
-                        "primary": "#000000",
-                        "primary-container": "#131b2e",
-                        "on-primary-container": "#7c839b",
-                        "secondary-container": "#fddba5",
-                        "on-tertiary-container": "#79849a",
-                        "error": "#ba1a1a",
-                        "on-secondary-fixed-variant": "#5a431b",
-                        "surface-variant": "#d3e4fe",
-                        "primary-fixed": "#dae2fd",
-                        "on-tertiary-fixed": "#111c2d",
-                        "outline": "#76777d",
-                        "inverse-surface": "#213145",
-                        "secondary-fixed-dim": "#e3c28e",
-                        "on-error": "#ffffff",
-                        "surface-container-high": "#dce9ff",
-                        "surface-ivory": "#FDFDFB",
-                        "secondary-fixed": "#ffdeab"
-                    },
-                    "borderRadius": {
-                        "DEFAULT": "0.125rem",
-                        "lg": "0.25rem",
-                        "xl": "0.5rem",
-                        "full": "0.75rem"
-                    },
-                    "spacing": {
-                        "margin-desktop": "48px",
-                        "section-gap": "80px",
-                        "margin-mobile": "16px",
-                        "container-max": "1200px",
-                        "unit": "8px",
-                        "gutter": "24px"
-                    },
-                    "fontFamily": {
-                        "label-md": ["Noto Sans JP"],
-                        "headline-lg-mobile": ["Noto Serif JP"],
-                        "label-sm": ["Noto Sans JP"],
-                        "headline-lg": ["Noto Serif JP"],
-                        "display-lg": ["Noto Serif JP"],
-                        "body-md": ["Noto Sans JP"],
-                        "body-lg": ["Noto Sans JP"],
-                        "headline-md": ["Noto Serif JP"]
-                    },
-                    "fontSize": {
-                        "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "500" }],
-                        "headline-lg-mobile": ["24px", { "lineHeight": "34px", "fontWeight": "700" }],
-                        "label-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.08em", "fontWeight": "600" }],
-                        "headline-lg": ["32px", { "lineHeight": "44px", "letterSpacing": "0.01em", "fontWeight": "700" }],
-                        "display-lg": ["48px", { "lineHeight": "64px", "letterSpacing": "0.02em", "fontWeight": "700" }],
-                        "body-md": ["16px", { "lineHeight": "26px", "fontWeight": "400" }],
-                        "body-lg": ["18px", { "lineHeight": "30px", "fontWeight": "400" }],
-                        "headline-md": ["24px", { "lineHeight": "36px", "fontWeight": "600" }]
-                    }
-                }
-            }
-        }
-    </script>
 <style type="text/tailwindcss">
         @layer utilities {
             .ambient-shadow {
@@ -253,7 +158,7 @@
             </a>
         </nav>
         <button class="md:hidden text-primary">
-            <span class="material-symbols-outlined text-[28px]">menu</span>
+            <svg class="w-7 h-7 text-primary inline-block" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
         </button>
     </div>
 </header>
@@ -274,7 +179,7 @@
                     </p>
                     <div class="mt-8 bg-surface-ivory p-6 rounded-lg border border-outline-variant/20 shadow-sm">
                         <h3 class="font-headline-sm text-primary font-bold mb-4 flex items-center gap-2">
-                            <span class="material-symbols-outlined text-prestige-gold text-2xl">workspace_premium</span>
+                            <svg class="w-6 h-6 text-prestige-gold inline-block align-middle" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path></svg>
                             当研究所ならではの強み
                         </h3>
                         <ul class="space-y-3 font-body-md text-on-surface-variant leading-relaxed">
@@ -299,7 +204,7 @@
 <div class="mt-10">
 <a class="inline-flex items-center justify-center bg-prestige-gold text-white px-8 py-4 rounded hover:bg-secondary transition-colors font-label-md text-label-md ambient-shadow" href="index.html#contact">
                             まずは初回 個別相談（30分・無料）
-                            <span class="material-symbols-outlined ml-2">chevron_right</span>
+                            <svg class="w-4 h-4 ml-2 inline-block align-middle" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
 </a>
 </div>
 </div>
@@ -388,15 +293,15 @@
                             </p>
 <ul class="space-y-4 mt-8 bg-surface-slate p-6 rounded border border-outline-variant/20">
 <li class="flex items-start">
-<span class="material-symbols-outlined text-prestige-gold mr-3 mt-1">check_circle</span>
+<svg class="w-5 h-5 text-prestige-gold mr-3 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
 <span class="">審査側が求める<strong>論理構成</strong> で申請書類を組み立てる</span>
 </li>
 <li class="flex items-start">
-<span class="material-symbols-outlined text-prestige-gold mr-3 mt-1">check_circle</span>
+<svg class="w-5 h-5 text-prestige-gold mr-3 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
 <span class="">補正が発生しやすいポイントを<strong>事前に潰す</strong></span>
 </li>
 <li class="flex items-start">
-<span class="material-symbols-outlined text-prestige-gold mr-3 mt-1">check_circle</span>
+<svg class="w-5 h-5 text-prestige-gold mr-3 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
 <span class="">認定後の定期報告・監査にも耐えうる<strong>書類の土台</strong> をつくる</span>
 </li>
 </ul>
@@ -669,7 +574,7 @@
             <!-- 充当注記 -->
             <div class="md:ml-18 p-6 bg-surface-container-low border-l-4 border-prestige-gold rounded-r-lg mb-8 shadow-sm">
                 <p class="font-body-md text-on-surface-variant leading-relaxed">
-                    <span class="material-symbols-outlined text-prestige-gold align-middle mr-1">info</span>
+                    <svg class="w-5 h-5 text-prestige-gold inline-block align-middle mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
                     初回ご相談から<strong class="text-primary font-bold">1か月以内</strong>に申請代理をご依頼いただいた場合、初回分の相談料を本契約の報酬額から充当いたします（2回目以降の相談料、および1か月を経過した場合は対象外）。
                 </p>
             </div>
@@ -880,7 +785,7 @@
             
             <a href="fees.html" class="block glass-panel border border-outline-variant/20 p-8 rounded-lg hover:border-prestige-gold/50 hover:shadow-lg transition-all group">
                 <p class="font-label-sm text-label-sm text-prestige-gold tracking-widest mb-3 flex items-center">
-                    <span class="material-symbols-outlined text-[16px] mr-2">request_quote</span>
+                    <svg class="w-4 h-4 mr-2 text-prestige-gold inline-block align-middle" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
                     報酬額表
                 </p>
                 <p class="font-headline-md text-body-lg text-primary mb-2 group-hover:text-prestige-gold transition-colors font-bold">全業務の報酬額・重要事項</p>
@@ -889,7 +794,7 @@
             
             <a href="https://www.aawave.co.jp/governance/" target="_blank" rel="noopener noreferrer" class="block glass-panel border border-outline-variant/20 p-8 rounded-lg hover:border-prestige-gold/50 hover:shadow-lg transition-all group md:col-span-2">
                 <p class="font-label-sm text-label-sm text-prestige-gold tracking-widest mb-3 flex items-center">
-                    <span class="material-symbols-outlined text-[16px] mr-2">corporate_fare</span>
+                    <svg class="w-4 h-4 mr-2 text-prestige-gold inline-block align-middle" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
                     AA WAVE 合同会社 / 外部役員就任
                 </p>
                 <p class="font-headline-md text-body-lg text-primary mb-2 group-hover:text-prestige-gold transition-colors font-bold">認定取得後の組織運営支援・ガバナンス顧問</p>

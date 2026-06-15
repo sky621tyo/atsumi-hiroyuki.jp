@@ -15,99 +15,8 @@
     <meta property="og:site_name" content="行政書士 渥美洋行 政策法務研究所">
     <meta name="twitter:card" content="summary_large_image">
     
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700&family=Noto+Serif+JP:wght@400;600;700&display=swap" rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
-    <script id="tailwind-config">
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    "colors": {
-                        "surface-slate": "#F8FAFC",
-                        "error-container": "#ffdad6",
-                        "inverse-surface": "#213145",
-                        "on-background": "#0b1c30",
-                        "on-surface": "#0b1c30",
-                        "surface-bright": "#f8f9ff",
-                        "on-error": "#ffffff",
-                        "surface-container-low": "#eff4ff",
-                        "surface-container-high": "#dce9ff",
-                        "on-tertiary-fixed": "#111c2d",
-                        "surface-container-lowest": "#ffffff",
-                        "secondary-fixed": "#ffdeab",
-                        "tertiary-fixed": "#d8e3fb",
-                        "outline-variant": "#c6c6cd",
-                        "on-primary-fixed-variant": "#3f465c",
-                        "tertiary-fixed-dim": "#bcc7de",
-                        "outline": "#76777d",
-                        "inverse-on-surface": "#eaf1ff",
-                        "on-tertiary-container": "#79849a",
-                        "on-secondary-fixed": "#271900",
-                        "surface-container": "#e5eeff",
-                        "error": "#ba1a1a",
-                        "surface-container-highest": "#d3e4fe",
-                        "tertiary": "#000000",
-                        "secondary-fixed-dim": "#e3c28e",
-                        "surface-ivory": "#FDFDFB",
-                        "surface-tint": "#565e74",
-                        "secondary-container": "#fddba5",
-                        "surface": "#f8f9ff",
-                        "on-primary-container": "#7c839b",
-                        "primary-fixed": "#dae2fd",
-                        "on-primary": "#ffffff",
-                        "surface-variant": "#d3e4fe",
-                        "prestige-gold": "#C5A059",
-                        "on-secondary": "#ffffff",
-                        "on-tertiary": "#ffffff",
-                        "on-tertiary-fixed-variant": "#3c475a",
-                        "background": "#f8f9ff",
-                        "on-surface-variant": "#45464d",
-                        "primary-container": "#131b2e",
-                        "tertiary-container": "#111c2d",
-                        "on-secondary-fixed-variant": "#5a431b",
-                        "on-secondary-container": "#785f34",
-                        "inverse-primary": "#bec6e0",
-                        "primary-fixed-dim": "#bec6e0",
-                        "primary": "#000000",
-                        "on-error-container": "#93000a",
-                        "secondary": "#735a30",
-                        "on-primary-fixed": "#131b2e",
-                        "surface-dim": "#cbdbf5"
-                    },
-                    "spacing": {
-                        "margin-mobile": "16px",
-                        "container-max": "1200px",
-                        "margin-desktop": "48px",
-                        "gutter": "24px",
-                        "section-gap": "80px",
-                        "unit": "8px"
-                    },
-                    "fontFamily": {
-                        "label-md": ["Noto Sans JP"],
-                        "headline-md": ["Noto Serif JP"],
-                        "body-lg": ["Noto Sans JP"],
-                        "body-md": ["Noto Sans JP"],
-                        "label-sm": ["Noto Sans JP"],
-                        "display-lg": ["Noto Serif JP"],
-                        "headline-lg": ["Noto Serif JP"],
-                        "headline-lg-mobile": ["Noto Serif JP"],
-                        "en": ["Helvetica Neue", "Arial", "sans-serif"]
-                    },
-                    "fontSize": {
-                        "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "500" }],
-                        "headline-md": ["24px", { "lineHeight": "36px", "fontWeight": "600" }],
-                        "body-lg": ["18px", { "lineHeight": "30px", "fontWeight": "400" }],
-                        "body-md": ["16px", { "lineHeight": "26px", "fontWeight": "400" }],
-                        "label-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.08em", "fontWeight": "600" }],
-                        "display-lg": ["48px", { "lineHeight": "64px", "letterSpacing": "0.02em", "fontWeight": "700" }],
-                        "headline-lg": ["32px", { "lineHeight": "44px", "letterSpacing": "0.01em", "fontWeight": "700" }],
-                        "headline-lg-mobile": ["24px", { "lineHeight": "34px", "fontWeight": "700" }]
-                    }
-                }
-            }
-        }
-    </script>
     <style>
         body { background-color: #f8f9ff; color: #0b1c30; }
         .glass-panel {
@@ -214,7 +123,7 @@
             </a>
         </nav>
         <button class="md:hidden text-primary">
-            <span class="material-symbols-outlined text-[28px]">menu</span>
+            <svg class="w-7 h-7 text-primary inline-block" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
         </button>
     </div>
 </header>
@@ -386,10 +295,10 @@
         
         <div class="text-body-lg font-body-lg text-on-surface-variant leading-relaxed max-w-4xl">
             <ul class="space-y-4 mb-12 ml-2 list-none">
-                <li class="flex items-start"><span class="material-symbols-outlined text-prestige-gold mr-3">check_circle</span> 書類作成の想定工数（申請書類の分量・複雑性）</li>
-                <li class="flex items-start"><span class="material-symbols-outlined text-prestige-gold mr-3">check_circle</span> 関係官庁の数および調整の難易度</li>
-                <li class="flex items-start"><span class="material-symbols-outlined text-prestige-gold mr-3">check_circle</span> 事業計画の規模および財務分析の深度</li>
-                <li class="flex items-start"><span class="material-symbols-outlined text-prestige-gold mr-3">check_circle</span> 求められる対応期間</li>
+                <li class="flex items-start"><svg class="w-5 h-5 text-prestige-gold mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg> 書類作成の想定工数（申請書類の分量・複雑性）</li>
+                <li class="flex items-start"><svg class="w-5 h-5 text-prestige-gold mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg> 関係官庁の数および調整の難易度</li>
+                <li class="flex items-start"><svg class="w-5 h-5 text-prestige-gold mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg> 事業計画の規模および財務分析の深度</li>
+                <li class="flex items-start"><svg class="w-5 h-5 text-prestige-gold mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg> 求められる対応期間</li>
             </ul>
 
             <p class="mb-12">
@@ -612,7 +521,7 @@
                 <p class="text-label-sm text-on-surface-variant mb-6">送信することで、<a href="privacy.html" target="_blank" class="text-primary-container border-b border-primary-container hover:text-prestige-gold transition-colors">プライバシーポリシー</a>に同意したものとみなします。</p>
                 <button type="submit" class="w-full md:w-auto inline-flex items-center justify-center bg-primary-container text-white text-label-md font-label-md px-12 py-4 rounded hover:bg-primary-container/90 transition-colors shadow-md">
                     送信する
-                    <span class="material-symbols-outlined ml-2 text-[18px]">send</span>
+                    <svg class="w-4 h-4 ml-2 inline-block align-middle" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z"></path></svg>
                 </button>
             </div>
         </form>

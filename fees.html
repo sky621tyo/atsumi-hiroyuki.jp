@@ -15,99 +15,8 @@
     <meta property="og:site_name" content="行政書士 渥美洋行 政策法務研究所">
     <meta name="twitter:card" content="summary_large_image">
     
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700&family=Noto+Serif+JP:wght@400;600;700&display=swap" rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
-    <script id="tailwind-config">
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    "colors": {
-                        "surface-slate": "#F8FAFC",
-                        "error-container": "#ffdad6",
-                        "inverse-surface": "#213145",
-                        "on-background": "#0b1c30",
-                        "on-surface": "#0b1c30",
-                        "surface-bright": "#f8f9ff",
-                        "on-error": "#ffffff",
-                        "surface-container-low": "#eff4ff",
-                        "surface-container-high": "#dce9ff",
-                        "on-tertiary-fixed": "#111c2d",
-                        "surface-container-lowest": "#ffffff",
-                        "secondary-fixed": "#ffdeab",
-                        "tertiary-fixed": "#d8e3fb",
-                        "outline-variant": "#c6c6cd",
-                        "on-primary-fixed-variant": "#3f465c",
-                        "tertiary-fixed-dim": "#bcc7de",
-                        "outline": "#76777d",
-                        "inverse-on-surface": "#eaf1ff",
-                        "on-tertiary-container": "#79849a",
-                        "on-secondary-fixed": "#271900",
-                        "surface-container": "#e5eeff",
-                        "error": "#ba1a1a",
-                        "surface-container-highest": "#d3e4fe",
-                        "tertiary": "#000000",
-                        "secondary-fixed-dim": "#e3c28e",
-                        "surface-ivory": "#FDFDFB",
-                        "surface-tint": "#565e74",
-                        "secondary-container": "#fddba5",
-                        "surface": "#f8f9ff",
-                        "on-primary-container": "#7c839b",
-                        "primary-fixed": "#dae2fd",
-                        "on-primary": "#ffffff",
-                        "surface-variant": "#d3e4fe",
-                        "prestige-gold": "#C5A059",
-                        "on-secondary": "#ffffff",
-                        "on-tertiary": "#ffffff",
-                        "on-tertiary-fixed-variant": "#3c475a",
-                        "background": "#f8f9ff",
-                        "on-surface-variant": "#45464d",
-                        "primary-container": "#131b2e",
-                        "tertiary-container": "#111c2d",
-                        "on-secondary-fixed-variant": "#5a431b",
-                        "on-secondary-container": "#785f34",
-                        "inverse-primary": "#bec6e0",
-                        "primary-fixed-dim": "#bec6e0",
-                        "primary": "#000000",
-                        "on-error-container": "#93000a",
-                        "secondary": "#735a30",
-                        "on-primary-fixed": "#131b2e",
-                        "surface-dim": "#cbdbf5"
-                    },
-                    "spacing": {
-                        "margin-mobile": "16px",
-                        "container-max": "1200px",
-                        "margin-desktop": "48px",
-                        "gutter": "24px",
-                        "section-gap": "80px",
-                        "unit": "8px"
-                    },
-                    "fontFamily": {
-                        "label-md": ["Noto Sans JP"],
-                        "headline-md": ["Noto Serif JP"],
-                        "body-lg": ["Noto Sans JP"],
-                        "body-md": ["Noto Sans JP"],
-                        "label-sm": ["Noto Sans JP"],
-                        "display-lg": ["Noto Serif JP"],
-                        "headline-lg": ["Noto Serif JP"],
-                        "headline-lg-mobile": ["Noto Serif JP"],
-                        "en": ["Helvetica Neue", "Arial", "sans-serif"]
-                    },
-                    "fontSize": {
-                        "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "500" }],
-                        "headline-md": ["24px", { "lineHeight": "36px", "fontWeight": "600" }],
-                        "body-lg": ["18px", { "lineHeight": "30px", "fontWeight": "400" }],
-                        "body-md": ["16px", { "lineHeight": "26px", "fontWeight": "400" }],
-                        "label-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.08em", "fontWeight": "600" }],
-                        "display-lg": ["48px", { "lineHeight": "64px", "letterSpacing": "0.02em", "fontWeight": "700" }],
-                        "headline-lg": ["32px", { "lineHeight": "44px", "letterSpacing": "0.01em", "fontWeight": "700" }],
-                        "headline-lg-mobile": ["24px", { "lineHeight": "34px", "fontWeight": "700" }]
-                    }
-                }
-            }
-        }
-    </script>
     <style>
         body { background-color: #f8f9ff; color: #0b1c30; }
         .glass-panel {
@@ -214,7 +123,7 @@
             </a>
         </nav>
         <button class="md:hidden text-primary">
-            <span class="material-symbols-outlined text-[28px]">menu</span>
+            <svg class="w-7 h-7 text-primary inline-block" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
         </button>
     </div>
 </header>
@@ -238,7 +147,7 @@
 <!-- Section 1: 公益法人・行政連携支援 -->
 <section class="mb-section-gap">
 <div class="flex items-center gap-3 mb-8 border-b border-outline-variant/20 pb-4">
-<span class="material-symbols-outlined text-prestige-gold text-3xl">account_balance</span>
+<svg class="w-8 h-8 text-prestige-gold inline-block align-middle" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z"></path></svg>
 <h2 class="text-headline-md font-headline-md text-primary">公益法人・行政連携支援</h2>
 </div>
 <div class="bg-surface-ivory rounded-xl border border-outline-variant/20 overflow-hidden shadow-sm mb-8">
@@ -306,11 +215,11 @@
 <div class="bg-surface-ivory p-4 rounded mt-6 text-sm border border-outline-variant/30">
 <ul class="space-y-3">
 <li class="flex gap-2">
-<span class="material-symbols-outlined text-prestige-gold text-lg shrink-0">info</span>
+<svg class="w-5 h-5 text-prestige-gold shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
 <span>初回ご相談から<strong>1か月以内</strong>に申請代理（本契約）をご依頼いただいた場合、初回分の相談料を本契約の報酬額から充当いたします（初回1回分のみ。2回目以降や1か月経過後は対象外）。</span>
 </li>
 <li class="flex gap-2">
-<span class="material-symbols-outlined text-prestige-gold text-lg shrink-0">info</span>
+<svg class="w-5 h-5 text-prestige-gold shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
 <span>認定取得後の定期提出書類の作成・変更認定申請・各種変更届出など、官公署への提出書類を伴う運営支援は、当研究所が承ります。</span>
 </li>
 </ul>
@@ -321,7 +230,7 @@
 <!-- Section 2: 一般法務（民事・許認可） -->
 <section class="mb-section-gap">
 <div class="flex items-center gap-3 mb-8 border-b border-outline-variant/20 pb-4">
-<span class="material-symbols-outlined text-prestige-gold text-3xl">gavel</span>
+<svg class="w-8 h-8 text-prestige-gold inline-block align-middle" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3"></path></svg>
 <h2 class="text-headline-md font-headline-md text-primary">一般法務（民事・許認可）</h2>
 </div>
 <div class="bg-surface-ivory rounded-xl border border-outline-variant/20 overflow-hidden shadow-sm mb-6">
@@ -378,7 +287,7 @@
 <!-- Section 3: お見積り・お支払いについて -->
 <section class="bg-surface-ivory p-8 rounded-xl border border-outline-variant/20 shadow-sm">
 <div class="flex items-center gap-3 mb-6">
-<span class="material-symbols-outlined text-primary text-2xl">payments</span>
+<svg class="w-6 h-6 text-primary inline-block align-middle" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
 <h3 class="text-lg font-headline-md text-primary">お見積り・お支払いについて</h3>
 </div>
 <ul class="space-y-4 text-body-md font-body-md text-on-surface-variant list-none pl-0">
@@ -407,7 +316,7 @@
 <!-- Section 4: 報酬に含まれないもの -->
 <section class="bg-surface-ivory p-8 rounded-xl border border-outline-variant/20 shadow-sm">
 <div class="flex items-center gap-3 mb-6">
-<span class="material-symbols-outlined text-primary text-2xl">money_off</span>
+<svg class="w-6 h-6 text-primary inline-block align-middle" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636"></path></svg>
 <h3 class="text-lg font-headline-md text-primary">報酬に含まれないもの</h3>
 </div>
 <ul class="space-y-4 text-body-md font-body-md text-on-surface-variant list-none pl-0 mb-6">
@@ -428,7 +337,7 @@
 <!-- Section 5: 出張対応 -->
 <section class="mb-section-gap max-w-3xl">
 <div class="flex items-center gap-3 mb-6">
-<span class="material-symbols-outlined text-prestige-gold text-2xl">commute</span>
+<svg class="w-6 h-6 text-prestige-gold inline-block align-middle" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path></svg>
 <h3 class="text-headline-md font-headline-md text-primary">出張対応</h3>
 </div>
 <p class="text-body-md font-body-md text-on-surface-variant mb-6 leading-relaxed">
@@ -488,7 +397,7 @@
                         初回30分の無料個別相談にて承ります。
                     </p>
 <a class="inline-flex items-center justify-center gap-2 bg-prestige-gold hover:bg-opacity-90 text-on-tertiary px-8 py-4 rounded-lg text-body-lg font-bold transition-all shadow-md hover:shadow-lg hover:-translate-y-0.5 w-full sm:w-auto" href="index.html#contact">
-<span class="material-symbols-outlined">calendar_month</span>
+<svg class="w-5 h-5 text-current inline-block align-middle mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
                         初回無料相談（30分）を申し込む
                     </a>
 </div>
