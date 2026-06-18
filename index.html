@@ -146,11 +146,35 @@
                 
             </a>
         </nav>
-        <button class="md:hidden text-primary">
+        <button id="mobile-menu-btn" class="md:hidden text-primary">
             <svg class="w-7 h-7 text-primary inline-block" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
         </button>
     </div>
 </header>
+
+<!-- Mobile Menu Overlay -->
+<div id="mobile-menu" class="fixed inset-0 z-50 bg-surface-ivory/98 flex flex-col p-6 space-y-6 md:hidden transform translate-x-full transition-transform duration-300 ease-in-out">
+    <div class="flex justify-between items-center w-full">
+        <a class="flex flex-col justify-center" href="index.html">
+            <span class="text-[9px] text-prestige-gold font-bold tracking-wider mb-0.5">元・内閣府 公益認定等委員会事務局 審査監督調査官</span>
+            <span class="font-headline-md text-sm font-bold text-primary tracking-tight">行政書士 渥美洋行 政策法務研究所</span>
+        </a>
+        <button id="mobile-menu-close" class="text-primary">
+            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+        </button>
+    </div>
+    <nav class="flex flex-col space-y-6 pt-10">
+        <a class="font-label-md text-lg text-on-surface-variant hover:text-prestige-gold transition-colors duration-300" href="index.html">ホーム</a>
+        <a class="font-label-md text-lg text-on-surface-variant hover:text-prestige-gold transition-colors duration-300" href="koueki.html">公益法人支援</a>
+        <a class="font-label-md text-lg text-on-surface-variant hover:text-prestige-gold transition-colors duration-300" href="fees.html">報酬額表</a>
+        <a class="font-label-md text-lg text-on-surface-variant hover:text-prestige-gold transition-colors duration-300 flex items-center" href="https://note.com/legal_and_policy" target="_blank" rel="noopener noreferrer">
+            note
+        </a>
+        <a class="bg-prestige-gold text-white px-6 py-4 rounded text-center text-label-md font-label-md hover:opacity-90 transition-opacity ambient-shadow" href="index.html#contact">
+            初回無料相談を予約
+        </a>
+    </nav>
+</div>
 
 <!-- Hero Section -->
 <section class="relative pt-24 pb-32 px-margin-mobile md:px-margin-desktop overflow-hidden" id="home">
@@ -601,6 +625,35 @@
     </div>
 </footer>
 
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const closeBtn = document.getElementById('mobile-menu-close');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuLinks = mobileMenu.querySelectorAll('a');
+
+        function toggleMenu() {
+            mobileMenu.classList.toggle('translate-x-full');
+            mobileMenu.classList.toggle('translate-x-0');
+        }
+
+        if (menuBtn && mobileMenu) {
+            menuBtn.addEventListener('click', toggleMenu);
+        }
+        if (closeBtn) {
+            closeBtn.addEventListener('click', toggleMenu);
+        }
+        
+        // Close menu when clicking on any link
+        menuLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                if (mobileMenu.classList.contains('translate-x-0')) {
+                    toggleMenu();
+                }
+            });
+        });
+    });
+</script>
 <script async src="https://note.com/scripts/embed.js" charset="utf-8"></script>
 </body>
 </html>
