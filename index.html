@@ -107,59 +107,60 @@
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "LegalService",
-      "name": "行政書士 渥美洋行 政策法務研究所",
-      "description": "公益法人認定、補助金申請、国際法務、一般法務を専門とする行政書士事務所。内閣府公益認定等委員会事務局での審査監督調査官経験を背景に、審査官の論理に則った書類作成を行う。",
-      "url": "https://atsumi-hiroyuki.jp/",
-      "telephone": "【電話番号を記入】",
-      "priceRange": "【価格帯を記入】",
-      "founder": {
-        "@type": "Person",
-        "name": "渥美 洋行",
-        "alternateName": "Hiroyuki Atsumi",
-        "jobTitle": "行政書士 / 代表",
-        "description": "元・内閣府 公益認定等委員会事務局 審査監督調査官。2024年に24年間勤めた中央省庁を早期退職。ベンチャー企業での広報やAI関連のプロジェクト責任者を経て、AA WAVE合同会社を設立。審査監督調査官として約3年間で100法人前後の公益認定・変更認定・定期報告等の審査監督に関与し、企業系財団や大規模法人の認定監督に携わる。官公庁の論理と最新テクノロジーの両方に触れ、現在は行政書士 渥美洋行 政策法務研究所 代表およびAA WAVE合同会社 代表社員として活動。",
-        "alumniOf": {
-          "@type": "Organization",
-          "name": "内閣府"
+      "@graph": [
+        {
+          "@type": "LegalService",
+          "@id": "https://atsumi-hiroyuki.jp/#organization",
+          "name": "行政書士 渥美洋行 政策法務研究所",
+          "url": "https://atsumi-hiroyuki.jp/",
+          "description": "元・内閣府 公益認定等委員会事務局 審査監督調査官による行政書士事務所。公益認定申請・公益信託・補助金・許認可・在留資格を支援。",
+          "founder": { "@id": "https://atsumi-hiroyuki.jp/#person" },
+          "areaServed": "JP",
+          "address": {
+            "@type": "PostalAddress",
+            "postalCode": "102-0071",
+            "addressRegion": "Tokyo",
+            "addressLocality": "Chiyoda-ku",
+            "streetAddress": "Fujimi 1-5-4 3F",
+            "addressCountry": "JP"
+          },
+          "knowsAbout": [
+            "公益認定申請",
+            "公益信託",
+            "補助金申請",
+            "許認可",
+            "在留資格",
+            "公益法人会計"
+          ],
+          "priceRange": "¥33,000〜"
         },
-        "hasOccupation": {
-          "@type": "Occupation",
-          "name": "行政書士",
-          "description": "公益認定申請、補助金申請、各種許認可、および国際法務（外国人の雇用や海外進出支援）を専門とする法務実務。"
-        },
-        "knowsAbout": [
-          "公益法務",
-          "補助金申請",
-          "国際法務",
-          "企業法務",
-          "公益認定申請",
-          "公益法人ガバナンス",
-          "企業系財団設立"
-        ],
-        "sameAs": [
-          "https://x.com/HAtsumi621",
-          "https://note.com/legal_and_policy",
-          "https://www.aawave.co.jp/",
-          "【LinkedInのURLを記入】",
-          "【WantedlyのURLを記入】"
-        ]
-      },
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "富士見1-5-4 3階",
-        "addressLocality": "千代田区",
-        "addressRegion": "東京都",
-        "postalCode": "102-0071",
-        "addressCountry": "JP"
-      },
-      "areaServed": "Japan",
-      "sameAs": [
-        "https://x.com/HAtsumi621",
-        "https://www.aawave.co.jp/",
-        "https://note.com/legal_and_policy",
-        "【LinkedInのURLを記入】",
-        "【WantedlyのURLを記入】"
+        {
+          "@type": "Person",
+          "@id": "https://atsumi-hiroyuki.jp/#person",
+          "name": "渥美 洋行",
+          "alternateName": "Hiroyuki Atsumi (former national public servant)",
+          "jobTitle": "行政書士",
+          "description": "内閣府公益認定等委員会事務局で審査監督調査官として約100法人の審査・監督に従事した元国家公務員（5省庁24年）。現在は行政書士・AA WAVE合同会社代表として、公益認定・補助金・自治体DXを支援する『官と民の翻訳者』。",
+          "worksFor": [
+            { "@id": "https://atsumi-hiroyuki.jp/#organization" },
+            { "@id": "https://www.aawave.co.jp/#organization" }
+          ],
+          "knowsLanguage": ["ja", "zh", "en"],
+          "hasCredential": {
+            "@type": "EducationalOccupationalCredential",
+            "name": "行政書士（東京都行政書士会／登録番号 第26082315号）",
+            "credentialCategory": "Professional License"
+          },
+          "sameAs": [
+            "https://www.aawave.co.jp/",
+            "https://jp.linkedin.com/in/hiroyuki-atsumi-051076392",
+            "https://www.wantedly.com/id/hiroyuki_atsumi",
+            "https://note.com/acrossthesky",
+            "https://note.com/legal_and_policy",
+            "https://x.com/HAtsumi621",
+            "https://www.threads.net/@sky621jpn"
+          ]
+        }
       ]
     }
     </script>
